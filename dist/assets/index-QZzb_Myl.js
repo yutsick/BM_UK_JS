@@ -183,7 +183,7 @@
       <div class="flex  mt-3">
         <!-- Logo -->
         <div class=" px-5 max-w-[24%] h-auto items-center flex">
-          <img src="/assets/images/${i}" alt="Logo" class="w-full">
+          <img src="./assets/images/${i}" alt="Logo" class="w-full">
         </div>
 
         <!-- List -->
