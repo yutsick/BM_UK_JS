@@ -6,7 +6,7 @@ export default function Sidebar() {
       <div class="faq-item">
         <!-- Question -->
         <button class="faq-toggle">
-          <span class="arrow relative hover:underline flex text-start pl-5">${question}</span>
+          <span class="arrow-faq relative hover:underline flex text-start pl-5">${question}</span>
         </button>
 
         <!-- Answer -->

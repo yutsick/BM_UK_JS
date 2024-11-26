@@ -1,26 +1,134 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))l(s);new MutationObserver(s=>{for(const e of s)if(e.type==="childList")for(const r of e.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&l(r)}).observe(document,{childList:!0,subtree:!0});function t(s){const e={};return s.integrity&&(e.integrity=s.integrity),s.referrerPolicy&&(e.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?e.credentials="include":s.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function l(s){if(s.ep)return;s.ep=!0;const e=t(s);fetch(s.href,e)}})();function b(){return`
-      <header class="relative bg-cover bg-center text-white" style="background-image: url('/assets/images/top-bg.jpg');">
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))r(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&r(l)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function r(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();function y(){return`
+      <header class="border-b-[5px] border-[#545B63] md:border-0 relative bg-cover bg-center text-white" style="background-image: url('./assets/images/top-bg.jpg');">
         <div class="bg-black bg-opacity-50">
-          <div class="container mx-auto px-6 py-10">
+          <div class="container mx-auto md:px-6 md:py-10 pt-3">
             
-            <div class="flex justify-between items-center mb-8">
-              
-              <div class="flex items-center space-x-2">
-                <div class=" text-black font-bold text-lg px-2 py-1 rounded">
-                  <img src="./assets/images/mv-logo.png">
+            <div class="flex justify-between items-start md:items-center mb-8 flex-wrap px-2 md:px-0">
+              <!-- Mobile nav -->
+              <button class="block md:hidden " id="mobile-menu-toggle">
+                <img src="./assets/images/burger.png">
+              </button>
+
+
+
+              <!-- Logo -->
+              <div class="flex items-center gap-1 mb-4 md:mb-0">
+                <div class="text-black font-bold text-lg  rounded">
+                  <img src="./assets/images/mv-logo.png" alt="Mattress Verdict Logo">
                 </div>
-                <span class=" font-semibold tracking-[3px] w-[95px] text-center leading-[20px] text-small uppercase">Mattress Verdict</span>
+                <span class="font-semibold tracking-[3px] w-[95px] text-center leading-[20px] text-sm uppercase">
+                  Mattress Verdict
+                </span>
               </div>
-  
-        
-              <nav class="hidden md:flex space-x-6 text-lg">
-                <a href="#" class="hover:underline decoration-[#4EA3B5] decoration-4">Top 10 Mattresses</a>
-                <a href="#" class="hover:underline decoration-[#4EA3B5] decoration-4">Best Mattress Types</a>
-                <a href="#" class="hover:underline decoration-[#4EA3B5] decoration-4">Reviews</a>
+
+              <!-- Navigation -->
+              <nav class="hidden md:flex  text-lg md:relative absolute w-[290px] h-auto md:w-auto bg-[#062036] md:bg-transparent top-4 md:top-0 z-20" id="top-nav">
+                <!-- Top 10 Mattresses -->
+                <div class="relative mx-6 mx:ml-0 py-4  md:py-0 text-color-linkVisit md:text-white font-bold md:font-normal">
+                  <a
+                    href="#"
+                    class="md:hover:underline decoration-[#4EA3B5] decoration-4"
+                  >
+                    Top 10 Mattresses
+                  </a>
+                  
+                </div>
+
+                <!-- Best Mattress Types -->
+                <div class="group relative pt-4 md:pt-0 border-t border-white md:border-0 mx-6">
+                  <a
+                    href="#"
+                    class="md:hover:underline decoration-[#4EA3B5] decoration-4"
+                  >
+                    Best Mattress Types
+                  </a>
+                  <!-- Dropdown -->
+                  <div
+                    class=" md:absolute right-0 top-[19px] mt-2 w-64 text-white md:text-[#062036] md:bg-white md-shadow-lg rounded-lg md:hidden group-hover:flex flex-col z-20"
+                  >
+                    <ul class="p-4 space-y-2">
+                    
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Luxury Mattresses</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Hybrid Mattresses</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Mattresses for Side Sleepers</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Mattresses and Back Pain</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Orthopaedic Mattresses</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Mattresses in a Box</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Memory Foam Mattresses</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Mattresses for Heavy People</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Best Beds, Frames & Bases</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Reviews -->
+                <div class="group relative pt-4 md:pt-0 border-t border-white md:border-0 mx-6">
+                  <a
+                    href="#"
+                    class="hover:underline decoration-[#4EA3B5] decoration-4"
+                  >
+                    Reviews
+                  </a>
+                  <!-- Dropdown -->
+                  <div
+                    class=" md:absolute right-0 top-[19px] mt-2 w-64 text-white md:text-[#062036] md:bg-white md-shadow-lg rounded-lg md:hidden group-hover:flex flex-col z-20"
+                  >
+                    <ul class="p-4 space-y-2">
+                    
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">DreamCloud Luxury Hybrid</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Simba</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Nectar Premier Hybrid</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Hypnia</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Lola</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Nectar Memory Foam</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Ergoflex</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block hover:text-[#4EA3B5]">Mattressman UK</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </nav>
+
+       
+
+  
             </div>
+
  
-            <div class="text-center md:text-left">
+            <div class="text-left hidden md:block">
               <h1 class="text-3xl md:text-5xl font-bold mb-4">
                 Top 10 Best Mattresses In UK: Ratings, Reviews and Sales of Top Mattresses!
               </h1>
@@ -28,29 +136,37 @@
                 You will spend a third of your life on a mattress. MattressVerdict is here to help you make a better choice when buying an online mattress. We provide detailed reviews of the best mattresses in 2024.
               </p>
               <p class="text-sm text-gray-300">
-                Disclosure: We receive referral fees from the brands listed below. <a href="#" class=" underline">More</a>
+                Disclosure: We receive referral fees from the brands listed below. <a href="#" class=" underline"  id="openDiscosure">More</a>
               </p>
             </div>
+            <div class="md:hidden bg-[#1D1C1C] bg-opacity-60 items-center justify-center h-[50px] w-full flex text-white">Top 10 Best Mattresses UK 2024</div>
           </div>
+                 <div class="bg-white py-2 px-4 md:hidden text-black uppercase">
+              Top 10 Best Mattresses In UK: Ratings, Reviews and Sales of Top Mattresses! Updated to November 15, 2024
+                <div class="text-color-grey normal-case text-[12px]">
+                    <span>Disclosure: We receive referral fees from the brands listed below.</span>
+                    <button class="link disclosure-link underline" type="button">More</button>
+                </div>
+              </div>
         </div>
       </header>
-    `}const g=[{question:"How do I choose the best mattress for back pain?",answer:'Look for mattresses that provide ample support and keep your spine aligned, especially if you suffer from back pain. Mattresses with medium to firm support are often recommended. Our "Back Pain" category compares mattresses specifically designed to relieve back pain and enhance support and comfort'},{question:"What is the benefit of a memory foam mattress?",answer:'Memory foam mattresses conform to your body, providing pressure relief and reducing motion transfer, making them a popular choice for those who share a bed. They’re ideal for people who want extra comfort and support without compromising on a soft feel. Check out our "Memory Foam" category for the top options.'},{question:"Are there affordable options for high-quality mattresses?",answer:'Yes, you can find high-quality mattresses across a wide range of prices. Our comparison includes a variety of mattresses that balance comfort, durability, and budget. Browse the "Top Picks" section for budget-friendly options that don’t compromise on quality'}];function y(){return`
+    `}const w=[{question:"How do I choose the best mattress for back pain?",answer:'Look for mattresses that provide ample support and keep your spine aligned, especially if you suffer from back pain. Mattresses with medium to firm support are often recommended. Our "Back Pain" category compares mattresses specifically designed to relieve back pain and enhance support and comfort'},{question:"What is the benefit of a memory foam mattress?",answer:'Memory foam mattresses conform to your body, providing pressure relief and reducing motion transfer, making them a popular choice for those who share a bed. They’re ideal for people who want extra comfort and support without compromising on a soft feel. Check out our "Memory Foam" category for the top options.'},{question:"Are there affordable options for high-quality mattresses?",answer:'Yes, you can find high-quality mattresses across a wide range of prices. Our comparison includes a variety of mattresses that balance comfort, durability, and budget. Browse the "Top Picks" section for budget-friendly options that don’t compromise on quality'}];function _(){return`
       <aside class="bg-[#545B63] text-[#D7D7D6] p-6 space-y-8 h-full">
         <!-- Common Questions -->
         <div>
           <h2 class="text-xl font-semibold text-center mb-4 border-b border-[#D7D7D6] pb-2">Common Questions</h2>
 
           <div class="flex flex-col gap-[10px]">
-            ${g.map(({question:a,answer:t})=>`
+            ${w.map(({question:i,answer:a})=>`
       <div class="faq-item">
         <!-- Question -->
         <button class="faq-toggle">
-          <span class="arrow relative hover:underline flex text-start pl-5">${a}</span>
+          <span class="arrow-faq relative hover:underline flex text-start pl-5">${i}</span>
         </button>
 
         <!-- Answer -->
         <p class="faq-answer hidden mt-2 text-[#D7D7D6] pl-5">
-          ${t}
+          ${a}
         </p>
       </div>
     `).join("")}
@@ -103,36 +219,54 @@
           </div>
         </div>
       </aside>
-    `}function x({ribbon:i,logo:a,title:t,scoreValue:l,scoreText:s,list:e,special:r}){return`
-      <div class="border-b border-gray-300 pt-8 pb-3 bg-white relative">
-        <div class="ribbon">${i}</div>
+    `}function k({ribbon:e,logo:i,title:a,scoreValue:r,scoreText:s,list:t,special:l}){return`
+      <div class="border-b border-gray-300 bg-white relative">
+        <div class="ribbon">${e}</div>
   
         <!-- Content -->
-        <div class="flex  mt-3">
+        <div class="flex  md:mt-3">
           <!-- Logo -->
-          <div class=" px-5 max-w-[24%] h-auto items-center flex">
-            <img src="./assets/images/${a}" alt="DreamCloud Logo" class="w-full">
-          </div>
-  
-          <!-- List -->
-          <div class="max-w-[48%]">
-            <h3 class="text-lg font-bold mb-2 font-rock">${t}</h3>
-            <div class="flex items-center text-yellow-500 mb-2">
+          <div class="  pt-10 md:pt-8 pb-3 bg-[#F3F3F3] md:bg-white px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col">
+          <img src="./assets/images/${i}" alt="Logo" class="w-full">
+          <!-- Score -->
+          <div class="text-center relative w-full md:hidden">
+            <div class=" text-[46px] font-rock text-color-base">${r}</div>
+            <div class="flex justify-center items-center text-yellow-500 mb-2">
             ${Array.from({length:5}).map(()=>'<span class="star star-full"></span>').join("")}  
             </div>
+
+          </div>
+        </div>
+  
+          <!-- List -->
+          <div class="pt-8 pb-20 md:pb-3 md:max-w-[48%] flex-1 px-2 md-px-0">
+            <h3 class="text-lg font-bold mb-2 font-rock">${a}</h3>
+            <hr class="md-hidden border-black mb-3 mt-5">
+            <div class="items-center text-yellow-500 mb-2 hidden md:flex">
+            ${Array.from({length:5}).map(()=>'<span class="star star-full"></span>').join("")}  
+            </div>
+            <a href="#" class="text-color-linkReview text-small font-bold underline ml-5 md:hidden">Full Review</a>
             <ul class="text-sm text-gray-600 space-y-1 mb-2">
-               ${e.map(c=>`<li class="list-item font-bold text-color-grey">${c}</li>`).join("")}
-              <li class="list-item  text-color-red font-bold">${r}</li>
+               ${t.map(c=>`<li class="list-item font-bold text-color-grey">${c}</li>`).join("")}
+              <li class="list-item  text-color-red font-bold">${l}</li>
             </ul>
-            <a href="#" class="text-color-linkReview text-small font-bold underline ml-5">Full Review</a>
+
+            <a href="#" class="text-color-linkReview text-small font-bold underline ml-5 hidden md:block">Full Review</a>
+              <!-- Button -->
+            <div class="flex flex-col items-end md:hidden mr-2 mt-5">
+              <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[18px] md:text-[24px] h-10 md:h-[50px] w-[135px] md:w-[160px] flex justify-center items-center ">
+                Check Price »
+              </a>
+              <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
+            </div>
           </div>
         
   
         <!-- Scores section-->
-        <div class="flex  items-center flex-col flex-grow px-4 space-y-10">
+        <div class="items-center flex-col  px-4 space-y-10 hidden md:flex">
           <!-- Score -->
           <div class="text-center relative w-full">
-            <div class=" text-[46px] font-rock text-color-base">${l}</div>
+            <div class=" text-[46px] font-rock text-color-base">${r}</div>
             <div class="text-base bg-background-grey text-color-base py-1 px-2 mx-auto w-fit font-bold">${s}</div>
 
              <!-- Tooltip -->
@@ -149,64 +283,84 @@
             <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[24px] h-[50px] w-[160px] flex justify-center items-center ">
               Check Price »
             </a>
-            <a href="#" class="text-blue-600 text-sm mt-2">Visit Site »</a>
+            <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
           </div>
         </div>
       </div>
   
         <!-- Banner -->
-        <a class="mt-4  text-center  px-4 font-semibold flex justify-end w-full ">
-          <div class=" text-color-linkReview bg-gray-300 flex-grow text-right px-4 justify-end flex space-x-4 py-1 border-dashed border border-background-green border-r-0">
+        <a href="#" class="mt-4  text-center  px-4 font-semibold flex justify-end w-full absolute z-1 bottom-2 md:relative">
+          <div class=" text-color-linkReview bg-gray-300 flex-grow text-right px-4 justify-end flex space-x-4 py-1 border-dashed border border-background-green border-r-0 flex-col items-center md:flex-row">
             <span> Get FREE delivery and returns </span>
             <span class="tracking-[2px] text-gray-600 font-rock">365-day trial</span>
           </div> 
            
-          <div class="bg-background-green font-normal flex items-center flex-shrink-0 px-4 text-white text-small">Visit DreamCloud Website »</div>
+        
+          <div class="bg-background-green font-normal flex gap-1 items-center flex-shrink-0 px-4 text-white text-small rounded-e-[5px]">
+          <span class="hidden md:inline">Visit DreamCloud Website</span>
+          <img src="./assets/images/rArr-icon.png" class="h-6 md:h-4">
+          </div>
         </a>
       </div>
-    `}function o({logo:i,title:a,scoreValue:t,scoreText:l,list:s,special:e}){t=parseFloat(t);let r=`<div class="flex items-center text-yellow-500 mb-2">
+    `}function o({logo:e,title:i,scoreValue:a,scoreText:r,list:s,special:t}){a=parseFloat(a);let l=`<div class="flex items-center text-yellow-500 mb-2 justify-center md:justify-start">
               ${Array.from({length:3}).map(()=>'<span class="star star-full"></span>').join("")} 
               <span class="star star-half"></span> 
               <span class="star star-empty"></span> 
-              </div>`;return t>9.5?r=`<div class="flex items-center text-yellow-500 mb-2">
+              </div>`;return a>9.5?l=`<div class="flex items-center text-yellow-500 mb-2 justify-center md:justify-start">
           ${Array.from({length:5}).map(()=>'<span class="star star-full"></span>').join("")}  
-          </div>`:t>9?r=`<div class="flex items-center text-yellow-500 mb-2">
+          </div>`:a>9?l=`<div class="flex items-center text-yellow-500 mb-2 justify-center md:justify-start">
           ${Array.from({length:4}).map(()=>'<span class="star star-full"></span>').join("")} 
           <span class="star star-half"></span> 
-          </div>`:t>8.5&&(r=`<div class="flex items-center text-yellow-500 mb-2">
+          </div>`:a>8.5&&(l=`<div class="flex items-center text-yellow-500 mb-2 justify-center md:justify-start">
           ${Array.from({length:4}).map(()=>'<span class="star star-full"></span>').join("")} 
           <span class="star star-empty"></span> 
           </div>`),`
-    <div class="border-b border-gray-300 pt-8 pb-3 bg-white relative">
+    <div class="border-b border-gray-300 bg-white relative ">
 
       <!-- Content -->
-      <div class="flex  mt-3">
+      <div class="flex  md:mt-3">
         <!-- Logo -->
-        <div class=" px-5 max-w-[24%] h-auto items-center flex">
-          <img src="./assets/images/${i}" alt="Logo" class="w-full">
+        <div class="  pt-8 pb-3 bg-[#F3F3F3] md:bg-white px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col">
+          <img src="./assets/images/${e}" alt="Logo" class="w-full">
+          <!-- Score -->
+          <div class="text-center relative w-full md:hidden">
+            <div class=" text-[46px] font-rock text-color-base">${a}</div>
+            ${l}
+
+          </div>
         </div>
 
         <!-- List -->
-        <div class="max-w-[48%]">
-          <h3 class="text-lg font-bold mb-2 font-rock">${a}</h3>
-          ${r}
+        <div class="  pt-8 pb-3 md:max-w-[48%] flex-1 px-2 md-px-0">
+          <h3 class="text-[18px] md:text-lg md:font-bold mb-2 font-rock">${i}</h3>
+          <div class="hidden md:block">${l}</div>
+          <hr class="md-hidden border-black mb-3 mt-5">
+          <a href="#" class="text-color-linkReview text-small font-bold underline ml-5 md:hidden">Full Review</a>
           <ul class="text-sm text-gray-600 space-y-1 mb-2">
-             ${s.map(c=>`<li class="list-item  text-color-grey">${c}</li>`).join("")}
-            ${e.underline?`<li class="list-item  underline">${e.underline}</li>`:""}
-            ${e.red?`<li class="list-item  text-color-red font-bold">${e.red}</li>`:""}
+             ${s.map(c=>`<li class="text-small md:text-base list-item  text-color-grey">${c}</li>`).join("")}
+            ${t.underline?`<li class="text-small md:text-base list-item  underline">${t.underline}</li>`:""}
+            ${t.red?`<li class="text-small md:text-base list-item  text-color-red font-bold">${t.red}</li>`:""}
             
              
           </ul>
-          <a href="#" class="text-color-linkReview text-small font-bold underline ml-5">Full Review</a>
-        </div>
+          <a href="#" class="text-color-linkReview text-small font-bold underline ml-5 hidden md:block">Full Review</a>
+              
+              <!-- Button -->
+            <div class="flex flex-col items-end md:hidden mr-2 mt-5">
+              <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[18px] md:text-[24px] h-10 md:h-[50px] w-[135px] md:w-[160px] flex justify-center items-center ">
+                Check Price »
+              </a>
+              <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
+            </div>
+          </div>
       
 
       <!-- Scores section-->
-      <div class="flex  items-center flex-col flex-grow px-4 space-y-10">
+      <div class="items-center flex-col  px-4 space-y-10 hidden md:flex">
         <!-- Score -->
-        <div class="text-center relative w-full">
-          <div class=" text-[46px] font-rock text-color-base">${t}</div>
-          <div class="text-base bg-background-grey text-color-base py-1 px-2 mx-auto w-fit font-bold">${l}</div>
+        <div class="text-center relative w-full ">
+          <div class=" text-[46px] font-rock text-color-base">${a}</div>
+          <div class="text-base bg-background-grey text-color-base py-1 px-2 mx-auto w-fit font-bold">${r}</div>
 
         </div>
       
@@ -216,18 +370,18 @@
           <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[24px] h-[50px] w-[160px] flex justify-center items-center ">
             Check Price »
           </a>
-          <a href="#" class="text-blue-600 text-sm mt-2">Visit Site »</a>
+          <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
         </div>
       </div>
     </div>
 
     </div>
-  `}function _(){return`
+  `}function M(){return`
     <div class="flex">
 
         <div class="w-full md:w-[70%] bg-background-primary text-text-primary">
 
-            ${x({ribbon:"Best Mattress Overall- UK 2024",logo:"dreamcloud_logo.webp",title:"DreamCloud UK - Luxurious Hybrid Mattress",scoreValue:"9.8",scoreText:"Outstanding",list:["Superior 365-night sleep trial","Forever Warranty™ protection","Combines comfort & support","Luxurious and cooling","Buy Now, Pay Later","Free returns and shipping","Lifetime warranty"],special:"*** Get up to 50% OFF any mattress! ***"})}
+            ${k({ribbon:"Best Mattress Overall- UK 2024",logo:"dreamcloud_logo.webp",title:"DreamCloud UK - Luxurious Hybrid Mattress",scoreValue:"9.8",scoreText:"Outstanding",list:["Superior 365-night sleep trial","Forever Warranty™ protection","Combines comfort & support","Luxurious and cooling","Buy Now, Pay Later","Free returns and shipping","Lifetime warranty"],special:"*** Get up to 50% OFF any mattress! ***"})}
 
             ${o({logo:"simba_logo.png",title:"Simba Hybrid Luxe Mattress Review",scoreValue:"9.5",scoreText:"Excellent",list:["Provides contouring and support","Targets support where you need it most","Keeps the mattress temperature just right","Conveniently delivered in a box to your door","Free delivery to most UK addresses","200-night risk-free trial","Lifetime warranty"],special:{underline:"Made in the UK!",red:"Get free accessories"}})}
 
@@ -248,16 +402,16 @@
 
 
         <div class="hidden md:block w-[30%] bg-background-secondary text-text-secondary">
-            ${y()}
+            ${_()}
         </div>
     </div>
 
-    `}const w=[{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"}];function k(){return`
-    <div class="mt-10 mb-4">
-      <h2 class="uppercase font-bold text-color-blue text-[25px]">COMPARING OUR TOP 5 BEST MATTRESSES ONLINE</h2>
+    `}const B=[{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"Medium",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"}];function F(){return`
+    <div class="mt-10 ">
+      <h2 class="ml-2 md:ml-0 uppercase font-bold text-[#237999] text-[25px]">COMPARING OUR TOP 5 BEST MATTRESSES ONLINE</h2>
       <div class="flex border-x">
         <!-- Headers -->
-        <div class="grid grid-rows-13 w-[178px] bg-white  pb-[6px]">
+        <div class="grid grid-rows-13 w-[160px] md:w-[178px] bg-white  pb-[6px]">
           <div class="cell-style font-bold text-[#4f4f4f]"></div>
           <div class="cell-style font-bold text-[#4f4f4f]">Review</div>
           <div class="cell-style font-bold text-[#4f4f4f]">Model</div>
@@ -276,27 +430,27 @@
         <!-- Data -->
         
         <div class="overflow-x-auto flex brands-table flex-1 ">
-          ${w.map(({brand_link:a,brand_logo:t,model:l,material:s,cooling:e,firmness:r,motion_isolation:c,trial_period:n,shipping_returns:d,warranty:p,price_level:m,special_sales:f,cta_link:u})=>{let h=Array(4).fill("./assets/images/icon-dollar_gray.svg").fill("./assets/images/icon-dollar.svg",0,m).map(v=>`<img width="21px" height="21px" src="${v}" alt="Dollar">`).join("");return`
+          ${B.map(({brand_link:i,brand_logo:a,model:r,material:s,cooling:t,firmness:l,motion_isolation:c,trial_period:f,shipping_returns:S,warranty:u,price_level:h,special_sales:v,cta_link:b})=>{let g=Array(4).fill("./assets/images/icon-dollar_gray.svg").fill("./assets/images/icon-dollar.svg",0,h).map(x=>`<img width="21px" height="21px" src="${x}" alt="Dollar">`).join("");return`
           <div class="flex">
-            <div class="grid grid-rows-13 w-[170px]">
-              <a class="cell-style text-color-blue font-bold" href="${a}">
-                <img src="${t}" class="max-w-[75%] py-2">
+            <div class="grid grid-rows-13 w-[240px] md:w-[170px]">
+              <a class="cell-style text-color-blue font-bold" href="${i}">
+                <img src="${a}" class="max-w-[75%] py-2">
               </a>
               <div class="cell-style text-[#727271]">
-                <a href="${a}" class="text-color-blue underline">Read Review</a>
+                <a href="${i}" class="text-color-blue underline">Read Review</a>
               </div>
-              <div class="cell-style text-[#727271]">${l}</div>
-              <div class="cell-style text-[#727271]">${s}</div>
-              <div class="cell-style text-[#727271]">${e}</div>
               <div class="cell-style text-[#727271]">${r}</div>
+              <div class="cell-style text-[#727271]">${s}</div>
+              <div class="cell-style text-[#727271]">${t}</div>
+              <div class="cell-style text-[#727271]">${l}</div>
               <div class="cell-style text-[#727271]">${c}</div>
-              <div class="cell-style text-[#727271]">${n}</div>
-              <div class="cell-style text-[#727271]">${d}</div>
-              <div class="cell-style text-[#727271]">${p}</div>
-              <div class="cell-style text-[#727271]">${h}</div>
-              <div class="cell-style text-color-red font-bold">${f}</div>
+              <div class="cell-style text-[#727271]">${f}</div>
+              <div class="cell-style text-[#727271]"><img src="https://mattressverdict.com/img/check-yes.svg"></div>
+              <div class="cell-style text-[#727271]">${u}</div>
+              <div class="cell-style text-[#727271]">${g}</div>
+              <div class="cell-style text-color-red font-bold">${v}</div>
               <div class="cell-style">
-                <a class="w-[130px] h-[50px] flex items-center justify-center bg-[#1FC0C8] border-b-[5px] border-b-[#238E9B] text-white px-4 py-1 rounded-[10px] hover:bg-[#238E9B]" href=${u}>Visit site ></a>
+                <a class="w-[130px] h-[50px] flex items-center justify-center bg-[#1FC0C8] border-b-[5px] border-b-[#238E9B] text-white px-4 py-1 rounded-[10px] hover:bg-[#238E9B] arrow arrow-white" href=${b}>Visit site</a>
               </div>
             </div>
           </div>
@@ -305,7 +459,7 @@
 
       </div>
     </div>
-  `}function M(){return`
+  `}function E(){return`
       <div class="bg-[#EDEDED] text-[#6C6B6E] py-10 px-6">
   <!-- How to Choose Section -->
   <section>
@@ -405,8 +559,8 @@ We understand that narrowing down to just one bed from the sea of options in the
           <div class="logo">
             <a href="" rel="nofollow" target="_blank">
               <picture id="">
-                <source srcset="/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp" type="image/webp">
-                <img src="/images/c3f86d2e30a15e29f0e20a11f0bad16c.png" alt="dreamcloud logo" loading="lazy"
+                <source srcset="https://mattressverdict.com/images/57ff6f463bf1e93c3530f7205175ec97.webp" type="image/webp">
+                <img src="https://mattressverdict.com/images/57ff6f463bf1e93c3530f7205175ec97.jpg" alt="dreamcloud logo" loading="lazy"
                   id="dreamcloud_mattress_mattress_CO_bottom1">
               </picture>
             </a>
@@ -433,7 +587,7 @@ We understand that narrowing down to just one bed from the sea of options in the
                   class="star star-full"></span></div>
             </div>
           </div>
-          <a id="dreamcloud_mattress_mattress_CO_bottom1" class="btn " href="" rel="nofollow" target="_blank">CHECK
+          <a id="dreamcloud_mattress_mattress_CO_bottom1" class="btn arrow arrow-white arrow-btn" href="" rel="nofollow" target="_blank">CHECK
             PRICE</a>
 
           <div class="offer">Black Friday Deals | Up To 50% OFF!</div>
@@ -479,7 +633,7 @@ We understand that narrowing down to just one bed from the sea of options in the
                   class="star star-full"></span></div>
             </div>
           </div>
-          <a id="nectar_mattress_mattress_CO_bottom1" class="btn" href="" rel="nofollow" target="_blank">CHECK PRICE</a>
+          <a id="nectar_mattress_mattress_CO_bottom1" class="btn arrow arrow-white arrow-btn" href="" rel="nofollow" target="_blank">CHECK PRICE</a>
 
           <div class="offer">Black Friday | Up To 50% OFF + $100 OFF!</div>
         </div>
@@ -524,7 +678,7 @@ We understand that narrowing down to just one bed from the sea of options in the
                   class="star star-full"></span></div>
             </div>
           </div>
-          <a id="saatva_mattress_mattress_CO_bottom1" class="btn trackOut" href="" rel="nofollow" target="_blank">CHECK
+          <a id="saatva_mattress_mattress_CO_bottom1" class="btn arrow arrow-white arrow-btn" href="" rel="nofollow" target="_blank">CHECK
             PRICE</a>
 
           <div class="offer">Black Friday | Up to $600 OFF</div>
@@ -582,7 +736,7 @@ We understand that narrowing down to just one bed from the sea of options in the
       <div class="spcls__line">
         <div class="spcls__offer">Black Friday Deals | Up To 50% OFF!</div>
         <div class="spcls__btn">
-          <a class="btn " href="" rel="nofollow" target="_blank">Check Price</a>
+          <a class="btn  arrow arrow-white arrow-middle" href="" rel="nofollow" target="_blank">Check Price</a>
         </div>
       </div>
       <div class="spcls__line">
@@ -689,7 +843,7 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
   <div class="spcls__line">
     <div class="spcls__offer">Black Friday | Up To 50% OFF + $100 OFF!</div>
     <div class="spcls__btn">
-      <a class="btn " href=""
+      <a class="btn arrow arrow-white arrow-middle" href=""
         rel="nofollow"
         target="_blank">Check Price</a>
     </div>
@@ -763,56 +917,107 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
   </section>
 </div>
 
-    `}function F(){return`
+    `}function T(){return`
+      <!-- Модалка -->
+<div
+  id="mineDisclosure"
+  class="fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-50 hidden"
+  role="dialog"
+  aria-modal="true"
+  tabindex="-1"
+>
+  <!-- Модалка діалог -->
+  <div class="bg-white rounded-lg shadow-lg max-w-lg w-full mx-4 md:mx-0 modal-body">
+    <!-- Заголовок модалки -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-gray-300">
+      <h5 class="text-lg font-semibold">Full Disclosure</h5>
+      <button
+        type="button"
+        class="text-gray-500 hover:text-gray-800"
+        id="mineDisclosureClose"
+        aria-label="Close"
+      >
+        &times;
+      </button>
+    </div>
+
+    <!-- Тіло модалки -->
+    <div class="p-6 overflow-y-auto max-h-96">
+      <p class="text-sm text-gray-700">
+        MattressVerdict.com is a mattress reviews website. Our website compares
+        leading brands, provides detailed reviews about the mattresses
+        construction, warranty, return policy, and more. We do not list all
+        mattress brands out there, nor do we cover all aspects of brands we
+        list. We do our best to keep the information accurate, but we can't
+        promise you that it is. Mattress companies often change their product
+        as well as their prices, warranty periods, and more. The best way to
+        get accurate information is to go to their respective official
+        websites. We receive referral fees from the brands on the website. We
+        do our best to provide accurate information. Fees impact rankings,
+        rating, and reviews.
+        <br /><br />
+        Click here for more information on
+        <a
+          href="https://mattressverdict.com/how-we-rate"
+          class="text-blue-600 hover:underline"
+        >
+          how we rate
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+    `}function D(){return`
      <footer class="bg-[#062036] text-white py-8 sm:py-8 text-sm">
         <div class="container mx-auto px-4">
           <div class="flex flex-col items-center text-center space-y-5">
             <!-- Меню -->
-            <ul class="flex flex-wrap justify-center items-center gap-y-2  space-x-3 sm:space-x-0 ">
+            <ul class="flex flex-wrap flex-col md:flex-row justify-center items-center gap-y-2  space-x-3 sm:space-x-0 ">
               <li class="flex items-center">
                 <a href="/terms-of-use" rel="nofollow" class="text-white hover:underline text-base">Terms</a>
-                <div class="hidden sm:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
+                <div class="hidden md:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
               </li>
               <li class="flex items-center">
                 <a href="/privacy" rel="nofollow" class="text-white hover:underline text-base">Privacy Policy</a>
-                <div class="hidden sm:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
+                <div class="hidden md:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
               </li>
               <li class="flex items-center">
                 <a href="/privacy-rights" rel="nofollow" class="text-white hover:underline text-base">Privacy Rights Policy</a>
-                <div class="hidden sm:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
+                <div class="hidden md:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
               </li>
               <li class="flex items-center">
                 <a href="/disclaimer" rel="nofollow" class="text-white hover:underline text-base">Disclaimer</a>
-                <div class="hidden sm:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
+                <div class="hidden md:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
               </li>
               <li class="flex items-center">
                 <a href="/how-we-rate" class="text-white hover:underline text-base">How We Rate</a>
-                <div class="hidden sm:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
+                <div class="hidden md:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
               </li>
               <li class="flex items-center">
                 <a href="/contact" class="text-white hover:underline text-base">Contact</a>
-                <div class="hidden sm:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
+                <div class="hidden md:block w-[4px] h-[4px] mx-3 bg-white rounded-full"></div>
               </li>
               <li class="flex items-center">
                 <a href="/about" class="text-white hover:underline text-base">About</a>
               </li>
             </ul>
-            <!-- Копірайт -->
-            <span class="text-[#5d6c79] text-xs sm:pt-5 sm:mx-auto sm:max-w-xs sm:w-full">
+            <!-- copywrite -->
+            <span class="text-[#5d6c79] text-xs sm:pt-5 sm:mx-auto sm:max-w-xs sm:w-full border-t md:border-t-0 border-[#506272] pt-5 md:pt-0">
               © 2024 All Rights Reserved
             </span>
           </div>
         </div>
       </footer>
-
-    `}function T(){document.querySelectorAll(".faq-toggle").forEach(i=>{i.addEventListener("click",()=>{const a=i.querySelector(".arrow"),t=i.nextElementSibling;a.classList.toggle("open"),t.classList.toggle("hidden"),t.classList.toggle("show")})})}document.getElementById("app").innerHTML=`
+    ${T()}  
+    `}function C(){document.querySelectorAll(".faq-toggle").forEach(e=>{e.addEventListener("click",()=>{const i=e.querySelector(".arrow-faq"),a=e.nextElementSibling;i.classList.toggle("open"),a.classList.toggle("hidden"),a.classList.toggle("show")})})}document.getElementById("app").innerHTML=`
     <div class="max-w-[1030px] w-full mx-auto">
-    ${b()}
-    ${_()}
-    ${k()}
+    ${y()}
     ${M()}
     ${F()}
+    ${E()}
+    ${D()}
     </div>
 
  
-`;T();document.querySelectorAll(".spcls-tabs").forEach(i=>{const a=i.querySelectorAll(".spcls-tabs__btn"),t=i.querySelectorAll(".spcls-tabs__panel");a.forEach(l=>{l.addEventListener("click",()=>{a.forEach(e=>e.classList.remove("bg-[#1FC0C8]","text-white","active")),l.classList.add("bg-[#1FC0C8]","text-white","active");const s=l.getAttribute("data-target");t.forEach(e=>e.classList.add("hidden")),t.forEach(e=>e.classList.remove("active")),i.querySelector(s).classList.remove("hidden"),i.querySelector(s).classList.add("active")})})});
+`;C();document.querySelectorAll(".spcls-tabs").forEach(e=>{const i=e.querySelectorAll(".spcls-tabs__btn"),a=e.querySelectorAll(".spcls-tabs__panel");i.forEach(r=>{r.addEventListener("click",()=>{i.forEach(t=>t.classList.remove("bg-[#1FC0C8]","text-white","active")),r.classList.add("bg-[#1FC0C8]","text-white","active");const s=r.getAttribute("data-target");a.forEach(t=>t.classList.add("hidden")),a.forEach(t=>t.classList.remove("active")),e.querySelector(s).classList.remove("hidden"),e.querySelector(s).classList.add("active")})})});const d=document.getElementById("mobile-menu-toggle"),n=document.getElementById("top-nav");d.addEventListener("click",()=>{n.classList.toggle("hidden")});function A(e){!n.contains(e.target)&&!d.contains(e.target)&&n.classList.add("hidden")}document.addEventListener("click",A);function m(e){document.getElementById(e).classList.remove("hidden"),document.getElementById(e).classList.add("flex")}function p(e){document.getElementById(e).classList.remove("flex"),document.getElementById(e).classList.add("hidden")}document.querySelector("#openDiscosure").addEventListener("click",()=>{m("mineDisclosure")});document.querySelector(".disclosure-link ").addEventListener("click",()=>{m("mineDisclosure")});document.querySelector("#mineDisclosureClose").addEventListener("click",()=>{p("mineDisclosure")});document.querySelector("#mineDisclosure").addEventListener("click",e=>{e.target===document.getElementById("mineDisclosure")&&p("mineDisclosure")});

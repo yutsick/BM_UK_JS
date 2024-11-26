@@ -43,3 +43,47 @@ document.querySelectorAll('.spcls-tabs').forEach((tabsContainer) => {
     });
   });
   
+
+const menuToggle = document.getElementById('mobile-menu-toggle');
+const mobileMenu = document.getElementById('top-nav');
+
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+function closeMenu(event) {
+  if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+    mobileMenu.classList.add('hidden');
+  }
+}
+document.addEventListener('click', closeMenu);
+
+
+// Modal
+function openModal(modalId) {
+  document.getElementById(modalId).classList.remove('hidden');
+  document.getElementById(modalId).classList.add('flex');
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).classList.remove('flex');
+  document.getElementById(modalId).classList.add('hidden');
+}
+
+document.querySelector('#openDiscosure').addEventListener('click', () => {
+  openModal('mineDisclosure');
+});
+document.querySelector('.disclosure-link ').addEventListener('click', () => {
+  openModal('mineDisclosure');
+});
+
+document.querySelector('#mineDisclosureClose').addEventListener('click', () => {
+  closeModal('mineDisclosure');
+});
+
+document.querySelector('#mineDisclosure').addEventListener('click', (event) => {
+  if (event.target === document.getElementById('mineDisclosure')) {
+    closeModal('mineDisclosure');
+  }
+  
+} );

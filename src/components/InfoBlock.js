@@ -99,8 +99,8 @@ We understand that narrowing down to just one bed from the sea of options in the
           <div class="logo">
             <a href="" rel="nofollow" target="_blank">
               <picture id="">
-                <source srcset="/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp" type="image/webp">
-                <img src="/images/c3f86d2e30a15e29f0e20a11f0bad16c.png" alt="dreamcloud logo" loading="lazy"
+                <source srcset="https://mattressverdict.com/images/57ff6f463bf1e93c3530f7205175ec97.webp" type="image/webp">
+                <img src="https://mattressverdict.com/images/57ff6f463bf1e93c3530f7205175ec97.jpg" alt="dreamcloud logo" loading="lazy"
                   id="dreamcloud_mattress_mattress_CO_bottom1">
               </picture>
             </a>
@@ -127,7 +127,7 @@ We understand that narrowing down to just one bed from the sea of options in the
                   class="star star-full"></span></div>
             </div>
           </div>
-          <a id="dreamcloud_mattress_mattress_CO_bottom1" class="btn " href="" rel="nofollow" target="_blank">CHECK
+          <a id="dreamcloud_mattress_mattress_CO_bottom1" class="btn arrow arrow-white arrow-btn" href="" rel="nofollow" target="_blank">CHECK
             PRICE</a>
 
           <div class="offer">Black Friday Deals | Up To 50% OFF!</div>
@@ -173,7 +173,7 @@ We understand that narrowing down to just one bed from the sea of options in the
                   class="star star-full"></span></div>
             </div>
           </div>
-          <a id="nectar_mattress_mattress_CO_bottom1" class="btn" href="" rel="nofollow" target="_blank">CHECK PRICE</a>
+          <a id="nectar_mattress_mattress_CO_bottom1" class="btn arrow arrow-white arrow-btn" href="" rel="nofollow" target="_blank">CHECK PRICE</a>
 
           <div class="offer">Black Friday | Up To 50% OFF + $100 OFF!</div>
         </div>
@@ -218,7 +218,7 @@ We understand that narrowing down to just one bed from the sea of options in the
                   class="star star-full"></span></div>
             </div>
           </div>
-          <a id="saatva_mattress_mattress_CO_bottom1" class="btn trackOut" href="" rel="nofollow" target="_blank">CHECK
+          <a id="saatva_mattress_mattress_CO_bottom1" class="btn arrow arrow-white arrow-btn" href="" rel="nofollow" target="_blank">CHECK
             PRICE</a>
 
           <div class="offer">Black Friday | Up to $600 OFF</div>
@@ -276,7 +276,7 @@ We understand that narrowing down to just one bed from the sea of options in the
       <div class="spcls__line">
         <div class="spcls__offer">Black Friday Deals | Up To 50% OFF!</div>
         <div class="spcls__btn">
-          <a class="btn " href="" rel="nofollow" target="_blank">Check Price</a>
+          <a class="btn  arrow arrow-white arrow-middle" href="" rel="nofollow" target="_blank">Check Price</a>
         </div>
       </div>
       <div class="spcls__line">
@@ -383,7 +383,7 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
   <div class="spcls__line">
     <div class="spcls__offer">Black Friday | Up To 50% OFF + $100 OFF!</div>
     <div class="spcls__btn">
-      <a class="btn " href=""
+      <a class="btn arrow arrow-white arrow-middle" href=""
         rel="nofollow"
         target="_blank">Check Price</a>
     </div>

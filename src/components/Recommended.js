@@ -30,7 +30,7 @@ export default function RotatedTable() {
 
         return `
           <div class="flex">
-            <div class="grid grid-rows-13 w-[170px]">
+            <div class="grid grid-rows-13 w-[240px] md:w-[170px]">
               <a class="cell-style text-color-blue font-bold" href="${brand_link}">
                 <img src="${brand_logo}" class="max-w-[75%] py-2">
               </a>
@@ -43,12 +43,12 @@ export default function RotatedTable() {
               <div class="cell-style text-[#727271]">${firmness}</div>
               <div class="cell-style text-[#727271]">${motion_isolation}</div>
               <div class="cell-style text-[#727271]">${trial_period}</div>
-              <div class="cell-style text-[#727271]">${shipping_returns}</div>
+              <div class="cell-style text-[#727271]"><img src="https://mattressverdict.com/img/check-yes.svg"></div>
               <div class="cell-style text-[#727271]">${warranty}</div>
               <div class="cell-style text-[#727271]">${priceLeveleImg}</div>
               <div class="cell-style text-color-red font-bold">${special_sales}</div>
               <div class="cell-style">
-                <a class="w-[130px] h-[50px] flex items-center justify-center bg-[#1FC0C8] border-b-[5px] border-b-[#238E9B] text-white px-4 py-1 rounded-[10px] hover:bg-[#238E9B]" href=${cta_link}>Visit site ></a>
+                <a class="w-[130px] h-[50px] flex items-center justify-center bg-[#1FC0C8] border-b-[5px] border-b-[#238E9B] text-white px-4 py-1 rounded-[10px] hover:bg-[#238E9B] arrow arrow-white" href=${cta_link}>Visit site</a>
               </div>
             </div>
           </div>
@@ -58,11 +58,11 @@ export default function RotatedTable() {
     .join('');
 
   return `
-    <div class="mt-10 mb-4">
-      <h2 class="uppercase font-bold text-color-blue text-[25px]">COMPARING OUR TOP 5 BEST MATTRESSES ONLINE</h2>
+    <div class="mt-10 ">
+      <h2 class="ml-2 md:ml-0 uppercase font-bold text-[#237999] text-[25px]">COMPARING OUR TOP 5 BEST MATTRESSES ONLINE</h2>
       <div class="flex border-x">
         <!-- Headers -->
-        <div class="grid grid-rows-13 w-[178px] bg-white  pb-[6px]">
+        <div class="grid grid-rows-13 w-[160px] md:w-[178px] bg-white  pb-[6px]">
           <div class="cell-style font-bold text-[#4f4f4f]"></div>
           <div class="cell-style font-bold text-[#4f4f4f]">Review</div>
           <div class="cell-style font-bold text-[#4f4f4f]">Model</div>
