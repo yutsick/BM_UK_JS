@@ -23,12 +23,12 @@ export default function card({logo, title, scoreValue, scoreText, list, special}
   }
   
   return `
-    <div class="border-b border-gray-300 bg-white relative ">
+    <div class="border-b border-gray-300 bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
 
       <!-- Content -->
-      <div class="flex  md:mt-3">
+      <div class="flex  md:pt-3">
         <!-- Logo -->
-        <div class="  pt-8 pb-3 bg-[#F3F3F3] md:bg-white px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col">
+        <div class="  pt-8 pb-3  px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col">
           <img src="./assets/images/${logo}" alt="Logo" class="w-full">
           <!-- Score -->
           <div class="text-center relative w-full md:hidden">
@@ -63,8 +63,8 @@ export default function card({logo, title, scoreValue, scoreText, list, special}
               
               <!-- Button -->
             <div class="flex flex-col items-end md:hidden mr-2 mt-5">
-              <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[18px] md:text-[24px] h-10 md:h-[50px] w-[135px] md:w-[160px] flex justify-center items-center ">
-                Check Price »
+              <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[18px] md:text-[24px] h-10 md:h-[50px] w-[135px] md:w-[160px] flex justify-center items-center arrow arrow-white">
+                Check Price
               </a>
               <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
             </div>
@@ -83,8 +83,8 @@ export default function card({logo, title, scoreValue, scoreText, list, special}
         
         <!-- Button -->
         <div class="flex flex-col items-center">
-          <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[24px] h-[50px] w-[160px] flex justify-center items-center ">
-            Check Price »
+          <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[24px] h-[50px] w-[160px] flex justify-center items-center arrow arrow-white">
+            Check Price
           </a>
           <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
         </div>

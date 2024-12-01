@@ -1,13 +1,13 @@
 
 export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, list, special}) {
     return `
-      <div class="border-b border-gray-300 bg-white relative">
+      <div class="border-b border-gray-300 bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
         <div class="ribbon">${ribbon}</div>
   
         <!-- Content -->
-        <div class="flex  md:mt-3">
+        <div class="flex  md:pt-3">
           <!-- Logo -->
-          <div class="  pt-10 md:pt-8 pb-3 bg-[#F3F3F3] md:bg-white px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col">
+          <div class="  pt-10 md:pt-8 pb-3  px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col">
           <img src="./assets/images/${logo}" alt="Logo" class="w-full">
           <!-- Score -->
           <div class="text-center relative w-full md:hidden">
@@ -35,8 +35,8 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
             <a href="#" class="text-color-linkReview text-small font-bold underline ml-5 hidden md:block">Full Review</a>
               <!-- Button -->
             <div class="flex flex-col items-end md:hidden mr-2 mt-5">
-              <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[18px] md:text-[24px] h-10 md:h-[50px] w-[135px] md:w-[160px] flex justify-center items-center ">
-                Check Price »
+              <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[18px] md:text-[24px] h-10 md:h-[50px] w-[135px] md:w-[160px] flex justify-center items-center arrow arrow-white">
+                Check Price
               </a>
               <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
             </div>
@@ -61,8 +61,8 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
           
           <!-- Button -->
           <div class="flex flex-col items-center">
-            <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[24px] h-[50px] w-[160px] flex justify-center items-center ">
-              Check Price »
+            <a href="#" class=" text-white bg-background-yellow py-2  rounded text-[24px] h-[50px] w-[160px] flex justify-center items-center arrow arrow-white">
+              Check Price
             </a>
             <a href="#" class="text-blue-600 text-sm mt-2 arrow">Visit Site</a>
           </div>
@@ -71,15 +71,15 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
   
         <!-- Banner -->
         <a href="#" class="mt-4  text-center  px-4 font-semibold flex justify-end w-full absolute z-1 bottom-2 md:relative">
-          <div class=" text-color-linkReview bg-gray-300 flex-grow text-right px-4 justify-end flex space-x-4 py-1 border-dashed border border-background-green border-r-0 flex-col items-center md:flex-row">
+          <div class=" text-color-linkReview bg-[#EDEDED] flex-grow text-right px-4 justify-end flex space-x-4 py-1 border-dashed border border-background-green border-r-0 flex-col items-center md:flex-row">
             <span> Get FREE delivery and returns </span>
-            <span class="tracking-[2px] text-gray-600 font-rock">365-day trial</span>
+            <span class="tracking-[2px] text-[#545B63] font-rock">365-day trial</span>
           </div> 
            
         
-          <div class="bg-background-green font-normal flex gap-1 items-center flex-shrink-0 px-4 text-white text-small rounded-e-[5px]">
+          <div class="bg-background-green font-normal flex gap-1 items-center flex-shrink-0 px-4 text-white text-small rounded-e-[5px] group">
           <span class="hidden md:inline">Visit DreamCloud Website</span>
-          <img src="./assets/images/rArr-icon.png" class="h-6 md:h-4">
+          <img src="./assets/images/rArr-icon.png" class="h-6 md:h-4 transform group-hover:translate-x-1 transition">
           </div>
         </a>
       </div>

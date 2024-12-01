@@ -6,7 +6,7 @@ export default function Main() {
     return `
     <div class="flex">
 
-        <div class="w-full md:w-[70%] bg-background-primary text-text-primary">
+        <div class="w-full md:w-[70%] bg-background-primary text-text-primary ">
 
             ${cardFirst(
                 {

@@ -30,7 +30,7 @@ export default function RotatedTable() {
 
         return `
           <div class="flex">
-            <div class="grid grid-rows-13 w-[240px] md:w-[170px]">
+            <div class="grid grid-rows-13 w-[145px] md:w-[170px]">
               <a class="cell-style text-color-blue font-bold" href="${brand_link}">
                 <img src="${brand_logo}" class="max-w-[75%] py-2">
               </a>
@@ -59,10 +59,10 @@ export default function RotatedTable() {
 
   return `
     <div class="mt-10 ">
-      <h2 class="ml-2 md:ml-0 uppercase font-bold text-[#237999] text-[25px]">COMPARING OUR TOP 5 BEST MATTRESSES ONLINE</h2>
+      <h2 class="ml-2 my-6 xl:ml-0 md:my-2 uppercase font-bold text-[#237999] text-[25px] leading-[28px] md:leading-normal">COMPARING OUR TOP 5 BEST MATTRESSES ONLINE</h2>
       <div class="flex border-x">
         <!-- Headers -->
-        <div class="grid grid-rows-13 w-[160px] md:w-[178px] bg-white  pb-[6px]">
+        <div class="grid grid-rows-13 w-[145px] md:w-[178px] bg-white  pb-[6px]">
           <div class="cell-style font-bold text-[#4f4f4f]"></div>
           <div class="cell-style font-bold text-[#4f4f4f]">Review</div>
           <div class="cell-style font-bold text-[#4f4f4f]">Model</div>

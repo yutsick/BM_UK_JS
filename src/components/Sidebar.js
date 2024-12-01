@@ -44,7 +44,7 @@ export default function Sidebar() {
               <p class="mt-2">
                 Discover the best mattresses on the market with our in-depth comparison. Whether you need extra support, prefer memory foam, or are looking for luxury options, we've evaluated the top picks to suit every sleep style and budget. From durability to comfort and value, make an informed choice for a better night's rest.
               </p>
-              <a href="https://mattressverdict.com/comparison/best-mattress" class="text-gray-300 text-sm hover:underline">Read More »</a>
+              <a href="https://mattressverdict.com/comparison/best-mattress" class="text-[#FEFEFE] text-sm hover:underline arrow arrow-gray font-bold">Read More</a>
             </div>
   
             <!-- Article 2 -->
@@ -57,7 +57,7 @@ export default function Sidebar() {
               <p class="mt-2">
                 Find relief from back pain with our top mattress choices. We've compared the best options to provide comfort, support, and alignment for a restful night.
               </p>
-              <a href="https://mattressverdict.com/comparison/best-mattress-for-back-pain" class="text-gray-300 text-sm hover:underline">Read More »</a>
+              <a href="https://mattressverdict.com/comparison/best-mattress-for-back-pain" class="text-[#FEFEFE] text-sm hover:underline font-bold arrow arrow-gray">Read More</a>
             </div>
   
             <!-- Article 3 -->
@@ -70,7 +70,7 @@ export default function Sidebar() {
               <p class="mt-2">
                 Back pain can interfere with your sleep, making you feel tired and achy all day. The right mattress can help UK back pain sufferers sleep comfortably through the night and wake up refreshed.
               </p>
-              <a href="https://mattressverdict.com/comparison/best-memory-foam-mattress" class="text-gray-300 text-sm hover:text-yellow-400">Read More »</a>
+              <a href="https://mattressverdict.com/comparison/best-memory-foam-mattress" class="text-[#FEFEFE] text-sm hover:underline font-bold arrow arrow-gray">Read More</a>
             </div>
           </div>
         </div>
