@@ -135,7 +135,7 @@
               <p class="text-[16px] mb-4">
                 You will spend a third of your life on a mattress. MattressVerdict is here to help you make a better choice when buying an online mattress. We provide detailed reviews of the best mattresses in 2024.
               </p>
-              <p class="text-sm text-gray-300">
+              <p class="text-sm text-gray-300 w-1/3 leading-[14px] lg:w-full">
                 Disclosure: We receive referral fees from the brands listed below. <a href="#" class=" underline"  id="openDiscosure">More</a>
               </p>
             </div>
@@ -220,7 +220,7 @@
         </div>
       </aside>
     `}function k({ribbon:e,logo:i,title:a,scoreValue:r,scoreText:s,list:t,special:l}){return`
-      <div class="border-b border-[#95A5A6] md:border-gray-300 md:bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
+      <div class="border-b-[3px] md:border-b border-[#95A5A6] md:border-gray-300 md:bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
         <div class="ribbon">${e}</div>
   
         <!-- Content -->
@@ -229,8 +229,8 @@
           <div class="  pt-10 md:pt-8 pb-3  px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col bg-[#f3f3f3] md:bg-transparent">
           <img src="./assets/images/${i}" alt="Logo" class="w-full">
           <!-- Score -->
-          <div class="text-center relative w-full md:hidden">
-            <div class=" text-[46px] font-rock text-color-base">${r}</div>
+          <div class="text-center relative w-full flex flex-col flex-1 justify-center mt-[-80px]  md:hidden">
+            <div class=" text-[40px] font-rock text-color-base font-bold">${r}</div>
             <div class="flex justify-center items-center text-yellow-500 mb-2">
             ${Array.from({length:5}).map(()=>'<span class="star star-full"></span>').join("")}  
             </div>
@@ -315,7 +315,7 @@
           ${Array.from({length:4}).map(()=>'<span class="star star-full"></span>').join("")} 
           <span class="star star-empty"></span> 
           </div>`),`
-    <div class="border-b border-[#95A5A6] md:border-gray-300 bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
+    <div class="border-b-[3px] md:border-b border-[#95A5A6] md:border-gray-300 bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
 
       <!-- Content -->
       <div class="flex  md:pt-3">
@@ -323,8 +323,8 @@
         <div class="  pt-8 pb-3  px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col bg-[#f3f3f3] md:bg-transparent">
           <img src="./assets/images/${e}" alt="Logo" class="w-full">
           <!-- Score -->
-          <div class="text-center relative w-full md:hidden">
-            <div class=" text-[46px] font-rock text-color-base">${a}</div>
+          <div class="text-center relative w-full flex flex-col flex-1 justify-center mt-[-80px] md:hidden">
+            <div class=" text-[40px] font-rock text-color-base  font-bold">${a}</div>
             ${l}
 
           </div>
@@ -381,7 +381,7 @@
 
         <div class="w-full md:w-[70%] bg-background-primary text-text-primary ">
 
-            ${k({ribbon:"Best Mattress Overall- UK 2024",logo:"dreamcloud_logo.webp",title:"DreamCloud UK - Luxurious Hybrid Mattress",scoreValue:"9.8",scoreText:"Outstanding",list:["Superior 365-night sleep trial","Forever Warranty™ protection","Combines comfort & support","Luxurious and cooling","Buy Now, Pay Later","Free returns and shipping","Lifetime warranty"],special:"*** Get up to 50% OFF any mattress! ***"})}
+            ${k({ribbon:"Best Mattress Overall- UK 2024",logo:"dreamcloud_logo.png",title:"DreamCloud UK - Luxurious Hybrid Mattress",scoreValue:"9.8",scoreText:"Outstanding",list:["Superior 365-night sleep trial","Forever Warranty™ protection","Combines comfort & support","Luxurious and cooling","Buy Now, Pay Later","Free returns and shipping","Lifetime warranty"],special:"*** Get up to 50% OFF any mattress! ***"})}
 
             ${o({logo:"simba_logo.png",title:"Simba Hybrid Luxe Mattress Review",scoreValue:"9.5",scoreText:"Excellent",list:["Provides contouring and support","Targets support where you need it most","Keeps the mattress temperature just right","Conveniently delivered in a box to your door","Free delivery to most UK addresses","200-night risk-free trial","Lifetime warranty"],special:{underline:"Made in the UK!",red:"Get free accessories"}})}
 
