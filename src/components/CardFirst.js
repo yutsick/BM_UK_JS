@@ -1,7 +1,7 @@
 
 export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, list, special}) {
     return `
-      <div class="border-b border-[#95A5A6] md:border-gray-300 md:bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
+      <div class="border-b-[3px] md:border-b border-[#95A5A6] md:border-gray-300 md:bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
         <div class="ribbon">${ribbon}</div>
   
         <!-- Content -->
@@ -10,8 +10,8 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
           <div class="  pt-10 md:pt-8 pb-3  px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col bg-[#f3f3f3] md:bg-transparent">
           <img src="./assets/images/${logo}" alt="Logo" class="w-full">
           <!-- Score -->
-          <div class="text-center relative w-full md:hidden">
-            <div class=" text-[46px] font-rock text-color-base">${scoreValue}</div>
+          <div class="text-center relative w-full flex flex-col flex-1 justify-center mt-[-80px]  md:hidden">
+            <div class=" text-[40px] font-rock text-color-base font-bold">${scoreValue}</div>
             <div class="flex justify-center items-center text-yellow-500 mb-2">
             ${Array.from({ length: 5 }).map(() => `<span class="star star-full"></span>`).join('')}  
             </div>

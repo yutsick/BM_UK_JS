@@ -136,7 +136,7 @@ export default function Header() {
               <p class="text-[16px] mb-4">
                 You will spend a third of your life on a mattress. MattressVerdict is here to help you make a better choice when buying an online mattress. We provide detailed reviews of the best mattresses in 2024.
               </p>
-              <p class="text-sm text-gray-300">
+              <p class="text-sm text-gray-300 w-1/3 leading-[14px] lg:w-full">
                 Disclosure: We receive referral fees from the brands listed below. <a href="#" class=" underline"  id="openDiscosure">More</a>
               </p>
             </div>

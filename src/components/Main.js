@@ -11,7 +11,7 @@ export default function Main() {
             ${cardFirst(
                 {
                     ribbon: 'Best Mattress Overall- UK 2024',
-                    logo: 'dreamcloud_logo.webp',
+                    logo: 'dreamcloud_logo.png',
                     title: 'DreamCloud UK - Luxurious Hybrid Mattress',
                     scoreValue: '9.8',
                     scoreText: 'Outstanding',
