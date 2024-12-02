@@ -4,7 +4,7 @@ export default function Header() {
         <div class="bg-black bg-opacity-50">
           <div class="container mx-auto md:px-6 md:py-5 pt-3">
             
-            <div class="flex  items-start md:items-center mb-8 flex-wrap px-2 md:px-0">
+            <div class="flex justify-between md:justify-start items-start md:items-center mb-8 flex-wrap px-2 md:px-0">
               <!-- Mobile nav -->
               <button class="block md:hidden " id="mobile-menu-toggle">
                 <img src="./assets/images/burger.png">

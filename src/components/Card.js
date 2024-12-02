@@ -23,12 +23,12 @@ export default function card({logo, title, scoreValue, scoreText, list, special}
   }
   
   return `
-    <div class="border-b border-gray-300 bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
+    <div class="border-b border-[#95A5A6] md:border-gray-300 bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
 
       <!-- Content -->
       <div class="flex  md:pt-3">
         <!-- Logo -->
-        <div class="  pt-8 pb-3  px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col">
+        <div class="  pt-8 pb-3  px-5 md:max-w-[24%] w-[40%] h-auto md:justify-center flex flex-col bg-[#f3f3f3] md:bg-transparent">
           <img src="./assets/images/${logo}" alt="Logo" class="w-full">
           <!-- Score -->
           <div class="text-center relative w-full md:hidden">
@@ -59,7 +59,7 @@ export default function card({logo, title, scoreValue, scoreText, list, special}
             
              
           </ul>
-          <a href="#" class="text-color-linkReview text-small font-bold underline ml-5 hidden md:block">Full Review</a>
+          <a href="#" class="text-color-linkReview hover:text-black text-small font-bold underline ml-5 hidden md:block">Full Review</a>
               
               <!-- Button -->
             <div class="flex flex-col items-end md:hidden mr-2 mt-5">

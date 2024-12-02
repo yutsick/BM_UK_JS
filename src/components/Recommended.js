@@ -48,7 +48,7 @@ export default function RotatedTable() {
               <div class="cell-style text-[#727271]">${priceLeveleImg}</div>
               <div class="cell-style text-color-red font-bold">${special_sales}</div>
               <div class="cell-style">
-                <a class="w-[130px] h-[50px] flex items-center justify-center bg-[#1FC0C8] border-b-[5px] border-b-[#238E9B] text-white px-4 py-1 rounded-[10px] hover:bg-[#238E9B] arrow arrow-white" href=${cta_link}>Visit site</a>
+                <a class="w-[130px] h-[50px] flex items-center justify-center bg-[#1FC0C8] border-b-[5px] border-b-[#238E9B] text-white px-4 py-1 rounded-[10px] hover:bg-[#238E9B] arrow arrow-white recommended-btn" href=${cta_link}>Visit site</a>
               </div>
             </div>
           </div>
