@@ -9,7 +9,7 @@
                 <img src="./assets/images/burger.png">
               </button>
 
-
+              
 
               <!-- Logo -->
               <div class="flex items-center gap-1 mb-4 md:mb-0">
@@ -23,6 +23,10 @@
 
               <!-- Navigation -->
               <nav class="hidden md:flex  text-lg md:relative absolute w-[290px] h-auto md:w-auto bg-[#062036] md:bg-transparent top-4 md:top-0 z-20" id="top-nav">
+                <!-- Close button for mobile -->
+                <button class="block md:hidden right-2 top-2 absolute z-100" id="mobile-menu-close">
+                  <img src="./assets/images/close.png" alt="Close Menu">
+                </button>
                 <!-- Top 10 Mattresses -->
                 <div class="relative mx-6 mx:ml-0 py-4  md:py-0 text-color-linkVisit md:text-white font-bold md:font-normal">
                   <a
@@ -430,7 +434,7 @@
         <!-- Data -->
         
         <div class="overflow-x-auto flex brands-table flex-1 ">
-          ${F.map(({brand_link:i,brand_logo:a,model:r,material:s,cooling:t,firmness:l,motion_isolation:c,trial_period:f,shipping_returns:D,warranty:h,price_level:u,special_sales:v,cta_link:b})=>{let g=Array(4).fill("./assets/images/icon-dollar_gray.svg").fill("./assets/images/icon-dollar.svg",0,u).map(x=>`<img width="21px" height="21px" src="${x}" alt="Dollar">`).join("");return`
+          ${F.map(({brand_link:i,brand_logo:a,model:r,material:s,cooling:t,firmness:l,motion_isolation:c,trial_period:f,shipping_returns:$,warranty:u,price_level:h,special_sales:v,cta_link:b})=>{let g=Array(4).fill("./assets/images/icon-dollar_gray.svg").fill("./assets/images/icon-dollar.svg",0,h).map(x=>`<img width="21px" height="21px" src="${x}" alt="Dollar">`).join("");return`
           <div class="flex">
             <div class="grid grid-rows-13 w-[145px] md:w-[170px]">
               <a class="cell-style text-color-blue font-bold" href="${i}">
@@ -446,7 +450,7 @@
               <div class="cell-style text-[#727271]">${c}</div>
               <div class="cell-style text-[#727271]">${f}</div>
               <div class="cell-style text-[#727271]"><img src="https://mattressverdict.com/img/check-yes.svg"></div>
-              <div class="cell-style text-[#727271]">${h}</div>
+              <div class="cell-style text-[#727271]">${u}</div>
               <div class="cell-style text-[#727271]">${g}</div>
               <div class="cell-style text-color-red font-bold">${v}</div>
               <div class="cell-style">
@@ -968,7 +972,7 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
   </div>
 </div>
 
-    `}function T(){return`
+    `}function C(){return`
      <footer class="bg-[#062036] text-white py-8 sm:py-8 text-sm">
         <div class="container mx-auto px-4">
           <div class="flex flex-col items-center text-center space-y-5">
@@ -1010,14 +1014,14 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
         </div>
       </footer>
     ${A()}  
-    `}function C(){document.querySelectorAll(".faq-toggle").forEach(e=>{e.addEventListener("click",()=>{const i=e.querySelector(".arrow-faq"),a=e.nextElementSibling;i.classList.toggle("open"),a.classList.toggle("hidden"),a.classList.toggle("show")})})}document.getElementById("app").innerHTML=`
+    `}function T(){document.querySelectorAll(".faq-toggle").forEach(e=>{e.addEventListener("click",()=>{const i=e.querySelector(".arrow-faq"),a=e.nextElementSibling;i.classList.toggle("open"),a.classList.toggle("hidden"),a.classList.toggle("show")})})}document.getElementById("app").innerHTML=`
     <div class="max-w-[1030px] w-full mx-auto">
     ${y()}
     ${E()}
     ${M()}
     ${B()}
-    ${T()}
+    ${C()}
     </div>
 
  
-`;C();document.querySelectorAll(".spcls-tabs").forEach(e=>{const i=e.querySelectorAll(".spcls-tabs__btn"),a=e.querySelectorAll(".spcls-tabs__panel");i.forEach(r=>{r.addEventListener("click",()=>{i.forEach(t=>t.classList.remove("bg-[#1FC0C8]","text-white","active")),r.classList.add("bg-[#1FC0C8]","text-white","active");const s=r.getAttribute("data-target");a.forEach(t=>t.classList.add("hidden")),a.forEach(t=>t.classList.remove("active")),e.querySelector(s).classList.remove("hidden"),e.querySelector(s).classList.add("active")})})});const d=document.getElementById("mobile-menu-toggle"),n=document.getElementById("top-nav");d.addEventListener("click",()=>{n.classList.toggle("hidden")});function S(e){!n.contains(e.target)&&!d.contains(e.target)&&n.classList.add("hidden")}document.addEventListener("click",S);function m(e){document.getElementById(e).classList.remove("hidden"),document.getElementById(e).classList.add("flex")}function p(e){document.getElementById(e).classList.remove("flex"),document.getElementById(e).classList.add("hidden")}document.querySelector("#openDiscosure").addEventListener("click",()=>{m("mineDisclosure")});document.querySelector(".disclosure-link ").addEventListener("click",()=>{m("mineDisclosure")});document.querySelector("#mineDisclosureClose").addEventListener("click",()=>{p("mineDisclosure")});document.querySelector("#mineDisclosure").addEventListener("click",e=>{e.target===document.getElementById("mineDisclosure")&&p("mineDisclosure")});
+`;T();document.querySelectorAll(".spcls-tabs").forEach(e=>{const i=e.querySelectorAll(".spcls-tabs__btn"),a=e.querySelectorAll(".spcls-tabs__panel");i.forEach(r=>{r.addEventListener("click",()=>{i.forEach(t=>t.classList.remove("bg-[#1FC0C8]","text-white","active")),r.classList.add("bg-[#1FC0C8]","text-white","active");const s=r.getAttribute("data-target");a.forEach(t=>t.classList.add("hidden")),a.forEach(t=>t.classList.remove("active")),e.querySelector(s).classList.remove("hidden"),e.querySelector(s).classList.add("active")})})});const d=document.getElementById("mobile-menu-toggle"),n=document.getElementById("top-nav"),S=document.querySelector("#mobile-menu-close");d.addEventListener("click",()=>{n.classList.toggle("hidden")});function D(e){(!n.contains(e.target)&&!d.contains(e.target)||S.contains(e.target))&&n.classList.add("hidden")}document.addEventListener("click",D);function m(e){document.getElementById(e).classList.remove("hidden"),document.getElementById(e).classList.add("flex")}function p(e){document.getElementById(e).classList.remove("flex"),document.getElementById(e).classList.add("hidden")}document.querySelector("#openDiscosure").addEventListener("click",()=>{m("mineDisclosure")});document.querySelector(".disclosure-link ").addEventListener("click",()=>{m("mineDisclosure")});document.querySelector("#mineDisclosureClose").addEventListener("click",()=>{p("mineDisclosure")});document.querySelector("#mineDisclosure").addEventListener("click",e=>{e.target===document.getElementById("mineDisclosure")&&p("mineDisclosure")});
