@@ -10,7 +10,7 @@ export default function Header() {
                 <img src="./assets/images/burger.png">
               </button>
 
-
+              
 
               <!-- Logo -->
               <div class="flex items-center gap-1 mb-4 md:mb-0">
@@ -24,6 +24,10 @@ export default function Header() {
 
               <!-- Navigation -->
               <nav class="hidden md:flex  text-lg md:relative absolute w-[290px] h-auto md:w-auto bg-[#062036] md:bg-transparent top-4 md:top-0 z-20" id="top-nav">
+                <!-- Close button for mobile -->
+                <button class="block md:hidden right-2 top-2 absolute z-100" id="mobile-menu-close">
+                  <img src="./assets/images/close.png" alt="Close Menu">
+                </button>
                 <!-- Top 10 Mattresses -->
                 <div class="relative mx-6 mx:ml-0 py-4  md:py-0 text-color-linkVisit md:text-white font-bold md:font-normal">
                   <a

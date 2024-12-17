@@ -46,13 +46,14 @@ document.querySelectorAll('.spcls-tabs').forEach((tabsContainer) => {
 
 const menuToggle = document.getElementById('mobile-menu-toggle');
 const mobileMenu = document.getElementById('top-nav');
+const closeBtn = document.querySelector('#mobile-menu-close');
 
 menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 });
 
 function closeMenu(event) {
-  if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+  if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target) || closeBtn.contains(event.target)) {
     mobileMenu.classList.add('hidden');
   }
 }
