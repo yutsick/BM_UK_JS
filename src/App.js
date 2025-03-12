@@ -1,3 +1,4 @@
+import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Main from './components/Main';
 import Recommended from './components/Recommended';
@@ -8,7 +9,9 @@ import data from './assets/data/recommended.json';
 
 
 document.getElementById('app').innerHTML = `
-    <div class="max-w-[1030px] w-full mx-auto">
+    ${TopBar()}
+    <div class="max-w-[1080px] w-full mx-auto">
+
     ${Header()}
     ${Main()}
     ${Recommended(data)}
@@ -88,3 +91,21 @@ document.querySelector('#mineDisclosure').addEventListener('click', (event) => {
   }
   
 } );
+
+const toggleButton = document.querySelector('#toggleButton');
+    const collapsibleText = document.querySelector('#collapsibleText');
+    const chevron = document.querySelector('#chevron');
+
+    let isOpen = false;
+
+    toggleButton.addEventListener('click', () => {
+        isOpen = !isOpen;
+
+        if (isOpen) {
+            collapsibleText.classList.remove('hidden');
+            chevron.classList.add('rotate-180', 'translate-y-2');
+        } else {
+            collapsibleText.classList.add('hidden');
+            chevron.classList.remove('rotate-180', 'translate-y-2');
+        }
+    });

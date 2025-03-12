@@ -234,7 +234,7 @@
           <img src="./assets/images/${i}" alt="Logo" class="w-full">
           <!-- Score -->
           <div class="text-center relative w-full flex flex-col flex-1 justify-center mt-[-80px]  md:hidden">
-            <div class=" text-[40px] font-rock text-color-base font-bold">${r}</div>
+            <div class=" text-[40px]  text-color-base font-bold">${r}</div>
             <div class="flex justify-center items-center text-yellow-500 mb-2">
             ${Array.from({length:5}).map(()=>'<span class="star star-full"></span>').join("")}  
             </div>
@@ -244,7 +244,7 @@
   
           <!-- List -->
           <div class="pt-8 pb-20 md:pb-3 md:max-w-[48%] flex-1 px-2 md-px-0">
-            <h3 class="text-lg font-bold mb-2 font-rock">${a}</h3>
+            <h3 class="text-lg font-bold mb-2 ">${a}</h3>
             <hr class="md-hidden border-black mb-3 mt-5">
             <div class="items-center text-yellow-500 mb-2 hidden md:flex">
             ${Array.from({length:5}).map(()=>'<span class="star star-full"></span>').join("")}  
@@ -270,7 +270,7 @@
         <div class="items-center flex-col  px-4 space-y-10 hidden md:flex">
           <!-- Score -->
           <div class="text-center relative w-full">
-            <div class=" text-[46px] font-rock text-color-base">${r}</div>
+            <div class=" text-[46px]  text-color-base">${r}</div>
             <div class="text-base bg-background-grey text-color-base py-1 px-2 mx-auto w-fit font-bold">${s}</div>
 
              <!-- Tooltip -->
@@ -296,7 +296,7 @@
         <a href="#" class="mt-4  text-center  px-4 font-semibold flex justify-end w-full absolute z-1 bottom-2 md:relative">
           <div class=" text-color-linkReview bg-[#EDEDED] flex-grow text-right px-4 justify-end flex space-x-4 py-1 border-dashed border border-background-green border-r-0 flex-col items-center md:flex-row">
             <span> Get FREE delivery and returns </span>
-            <span class="tracking-[2px] text-[#545B63] font-rock">365-day trial</span>
+            <span class="tracking-[2px] text-[#545B63] ">365-day trial</span>
           </div> 
            
         
@@ -328,7 +328,7 @@
           <img src="./assets/images/${e}" alt="Logo" class="w-full">
           <!-- Score -->
           <div class="text-center relative w-full flex flex-col flex-1 justify-center mt-[-80px] md:hidden">
-            <div class=" text-[40px] font-rock text-color-base  font-bold">${a}</div>
+            <div class=" text-[40px]  text-color-base  font-bold">${a}</div>
             ${l}
 
           </div>
@@ -336,7 +336,7 @@
 
         <!-- List -->
         <div class="  pt-8 pb-3 md:max-w-[48%] flex-1 px-2 md-px-0">
-          <h3 class="text-[18px] md:text-lg md:font-bold mb-2 font-rock">${i}</h3>
+          <h3 class="text-[18px] md:text-lg md:font-bold mb-2 ">${i}</h3>
           <div class="hidden md:block">${l}</div>
           <hr class="md-hidden border-black mb-3 mt-5">
           <a href="#" class="text-color-linkReview text-small font-bold underline ml-5 md:hidden">Full Review</a>
@@ -363,7 +363,7 @@
       <div class="items-center flex-col  px-4 space-y-10 hidden md:flex">
         <!-- Score -->
         <div class="text-center relative w-full ">
-          <div class=" text-[46px] font-rock text-color-base">${a}</div>
+          <div class=" text-[46px]  text-color-base">${a}</div>
           <div class="text-base bg-background-grey text-color-base py-1 px-2 mx-auto w-fit font-bold">${r}</div>
 
         </div>

@@ -11,7 +11,7 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
           <img src="./assets/images/${logo}" alt="Logo" class="w-full">
           <!-- Score -->
           <div class="text-center relative w-full flex flex-col flex-1 justify-center mt-[-80px]  md:hidden">
-            <div class=" text-[40px] font-rock text-color-base font-bold">${scoreValue}</div>
+            <div class=" text-[40px]  text-color-base font-bold">${scoreValue}</div>
             <div class="flex justify-center items-center text-yellow-500 mb-2">
             ${Array.from({ length: 5 }).map(() => `<span class="star star-full"></span>`).join('')}  
             </div>
@@ -21,7 +21,7 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
   
           <!-- List -->
           <div class="pt-8 pb-20 md:pb-3 md:max-w-[48%] flex-1 px-2 md-px-0">
-            <h3 class="text-lg font-bold mb-2 font-rock">${title}</h3>
+            <h3 class="text-lg font-bold mb-2 ">${title}</h3>
             <hr class="md-hidden border-black mb-3 mt-5">
             <div class="items-center text-yellow-500 mb-2 hidden md:flex">
             ${Array.from({ length: 5 }).map(() => `<span class="star star-full"></span>`).join('')}  
@@ -47,14 +47,9 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
         <div class="items-center flex-col  px-4 space-y-10 hidden md:flex">
           <!-- Score -->
           <div class="text-center relative w-full">
-            <div class=" text-[46px] font-rock text-color-base">${scoreValue}</div>
+            <div class=" text-[46px]  text-color-base">${scoreValue}</div>
             <div class="text-base bg-background-grey text-color-base py-1 px-2 mx-auto w-fit font-bold">${scoreText}</div>
 
-             <!-- Tooltip -->
-                <div class="absolute w-full max-w-[160px] top-0 left-1/2 -translate-x-1/2 -translate-y-full bg-gray-200 text-black text-sm  p-2 rounded shadow-lg">
-                    Over <span class="font-bold">690</span> people chose this mattress today
-                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-3 h-3 bg-gray-200 rotate-45 mb-1"></div>
-                </div>
 
           </div>
         
@@ -73,7 +68,7 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
         <a href="#" class="mt-4  text-center  px-4 font-semibold flex justify-end w-full absolute z-1 bottom-2 md:relative">
           <div class=" text-color-linkReview bg-[#EDEDED] flex-grow text-right px-4 justify-end flex space-x-4 py-1 border-dashed border border-background-green border-r-0 flex-col items-center md:flex-row">
             <span> Get FREE delivery and returns </span>
-            <span class="tracking-[2px] text-[#545B63] font-rock">365-day trial</span>
+            <span class="tracking-[2px] text-[#545B63] ">365-day trial</span>
           </div> 
            
         
