@@ -276,7 +276,7 @@
              <!-- Tooltip -->
                 <div class="absolute w-full max-w-[160px] top-0 left-1/2 -translate-x-1/2 -translate-y-full bg-gray-200 text-black text-sm  p-2 rounded shadow-lg">
                     Over <span class="font-bold">690</span> people chose this mattress today
-                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-3 h-3 bg-gray-200 rotate-45"></div>
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-3 h-3 bg-gray-200 rotate-45 mb-1"></div>
                 </div>
 
           </div>
@@ -410,7 +410,7 @@
         </div>
     </div>
 
-    `}const F=[{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"6.5/10",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/1cd5fe9410496fe7fb971ec83aed6b15.webp",model:"Nectar Mattress",material:"Foam",cooling:"8/10",firmness:"6.5/10",motion_isolation:"8/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Cyber Monday: Up To 50% OFF + $100 OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1",brand_logo:"https://mattressverdict.com/images/420d96107ff1c62394030fd3b10cab61.webp",model:"Saatva Mattress",material:"Hybrid InnerspringHybrid",cooling:"9/10",firmness:"3 Firmness Options",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Cyber Monday | Up to $600 OFF",cta_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1"},{brand_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1",brand_logo:"https://mattressverdict.com/images/128ea92284f687fcc949b143b15f2312.webp",model:"Helix Midnight Mattress",material:"Hybrid",cooling:"9/10",firmness:"6/10",motion_isolation:"7/10",trial_period:"100-Night Trial",shipping_returns:!0,warranty:"10 Years",price_level:4,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1"},{brand_link:"https://mattressverdict.com/track?site=18&image_id=18&position=1",brand_logo:"https://mattressverdict.com/images/22a2fca8375f7c37e907b14b18e910db.webp",model:"Brooklyn Bedding",material:"Hybrid",cooling:"/10",firmness:"3 Firmness Options",motion_isolation:"9/10",trial_period:"120-Night Tria",shipping_returns:!0,warranty:"10 Years",price_level:4,special_sales:"Special Sale! 30% OFF Mattresses",cta_link:"https://mattressverdict.com/track?site=18&image_id=18&position=1"},{brand_link:"https://mattressverdict.com/track?site=33&image_id=33&position=1",brand_logo:"https://mattressverdict.com/images/44bdcdbf57f11381040c4c6d86055a3d.webp",model:"Nectar Hybrid",material:"Hybrid",cooling:"8.5/10",firmness:"6.5/10",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Cyber Weekend: Up To 50% OFF + $100 OFF!",cta_link:"https://mattressverdict.com/track?site=33&image_id=33&position=1"},{brand_link:"https://mattressverdict.com/track?site=52&image_id=52&position=1",brand_logo:"https://mattressverdict.com/images/355ad978beb991acfbf4ac79ba4c2501.webp",model:"Bear Elite Hybrid Mattress",material:"Hybrid",cooling:"8/10",firmness:"3 Firmness Options",motion_isolation:"7.5/10",trial_period:"120-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:4,special_sales:"Black Friday! 35% Off + 2 FREE Pillows",cta_link:"https://mattressverdict.com/track?site=52&image_id=52&position=1"},{brand_link:"https://mattressverdict.com/track?site=17&image_id=17&position=1",brand_logo:"https://mattressverdict.com/images/ba5a72a11e0427d0fd093fb3d9261f8c.webp",model:"Nolah Evolution Mattress",material:"Hybrid",cooling:"9/10",firmness:"3 Firmness Options",motion_isolation:"8/10",trial_period:"120-Nights",shipping_returns:!0,warranty:"Lifetime",price_level:4,special_sales:"Special Sale! 35% OFF + FREE Pillows",cta_link:"https://mattressverdict.com/track?site=17&image_id=17&position=1"}];function M(){return`
+    `}const M=[{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/c3f86d2e30a15e29f0e20a11f0bad16c.webp",model:"Dreamcloud Mattress",material:"Hybrid",cooling:"9.5/10",firmness:"6.5/10",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1",brand_logo:"https://mattressverdict.com/images/1cd5fe9410496fe7fb971ec83aed6b15.webp",model:"Nectar Mattress",material:"Foam",cooling:"8/10",firmness:"6.5/10",motion_isolation:"8/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Cyber Monday: Up To 50% OFF + $100 OFF!",cta_link:"https://mattressverdict.com/track?site=2&image_id=2&position=1"},{brand_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1",brand_logo:"https://mattressverdict.com/images/420d96107ff1c62394030fd3b10cab61.webp",model:"Saatva Mattress",material:"Hybrid InnerspringHybrid",cooling:"9/10",firmness:"3 Firmness Options",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Cyber Monday | Up to $600 OFF",cta_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1"},{brand_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1",brand_logo:"https://mattressverdict.com/images/128ea92284f687fcc949b143b15f2312.webp",model:"Helix Midnight Mattress",material:"Hybrid",cooling:"9/10",firmness:"6/10",motion_isolation:"7/10",trial_period:"100-Night Trial",shipping_returns:!0,warranty:"10 Years",price_level:4,special_sales:"Black Friday Deals | Up To 50% OFF!",cta_link:"https://mattressverdict.com/track?site=3&image_id=3&position=1"},{brand_link:"https://mattressverdict.com/track?site=18&image_id=18&position=1",brand_logo:"https://mattressverdict.com/images/22a2fca8375f7c37e907b14b18e910db.webp",model:"Brooklyn Bedding",material:"Hybrid",cooling:"/10",firmness:"3 Firmness Options",motion_isolation:"9/10",trial_period:"120-Night Tria",shipping_returns:!0,warranty:"10 Years",price_level:4,special_sales:"Special Sale! 30% OFF Mattresses",cta_link:"https://mattressverdict.com/track?site=18&image_id=18&position=1"},{brand_link:"https://mattressverdict.com/track?site=33&image_id=33&position=1",brand_logo:"https://mattressverdict.com/images/44bdcdbf57f11381040c4c6d86055a3d.webp",model:"Nectar Hybrid",material:"Hybrid",cooling:"8.5/10",firmness:"6.5/10",motion_isolation:"7/10",trial_period:"365-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:3,special_sales:"Cyber Weekend: Up To 50% OFF + $100 OFF!",cta_link:"https://mattressverdict.com/track?site=33&image_id=33&position=1"},{brand_link:"https://mattressverdict.com/track?site=52&image_id=52&position=1",brand_logo:"https://mattressverdict.com/images/355ad978beb991acfbf4ac79ba4c2501.webp",model:"Bear Elite Hybrid Mattress",material:"Hybrid",cooling:"8/10",firmness:"3 Firmness Options",motion_isolation:"7.5/10",trial_period:"120-Night Trial",shipping_returns:!0,warranty:"Lifetime",price_level:4,special_sales:"Black Friday! 35% Off + 2 FREE Pillows",cta_link:"https://mattressverdict.com/track?site=52&image_id=52&position=1"},{brand_link:"https://mattressverdict.com/track?site=17&image_id=17&position=1",brand_logo:"https://mattressverdict.com/images/ba5a72a11e0427d0fd093fb3d9261f8c.webp",model:"Nolah Evolution Mattress",material:"Hybrid",cooling:"9/10",firmness:"3 Firmness Options",motion_isolation:"8/10",trial_period:"120-Nights",shipping_returns:!0,warranty:"Lifetime",price_level:4,special_sales:"Special Sale! 35% OFF + FREE Pillows",cta_link:"https://mattressverdict.com/track?site=17&image_id=17&position=1"}];function F(){return`
     <div class="mt-10 ">
       <h2 class="ml-2 my-6 xl:ml-0 md:my-2 uppercase font-bold text-[#237999] text-[25px] leading-[28px] md:leading-normal">COMPARING OUR TOP 5 BEST MATTRESSES ONLINE</h2>
       <div class="flex border-x">
@@ -434,7 +434,7 @@
         <!-- Data -->
         
         <div class="overflow-x-auto flex brands-table flex-1 ">
-          ${F.map(({brand_link:i,brand_logo:a,model:r,material:s,cooling:t,firmness:l,motion_isolation:c,trial_period:f,shipping_returns:$,warranty:u,price_level:h,special_sales:v,cta_link:b})=>{let g=Array(4).fill("./assets/images/icon-dollar_gray.svg").fill("./assets/images/icon-dollar.svg",0,h).map(x=>`<img width="21px" height="21px" src="${x}" alt="Dollar">`).join("");return`
+          ${M.map(({brand_link:i,brand_logo:a,model:r,material:s,cooling:t,firmness:l,motion_isolation:c,trial_period:f,shipping_returns:$,warranty:u,price_level:h,special_sales:v,cta_link:b})=>{let g=Array(4).fill("./assets/images/icon-dollar_gray.svg").fill("./assets/images/icon-dollar.svg",0,h).map(x=>`<img width="21px" height="21px" src="${x}" alt="Dollar">`).join("");return`
           <div class="flex">
             <div class="grid grid-rows-13 w-[145px] md:w-[170px]">
               <a class="cell-style text-color-blue font-bold" href="${i}">
@@ -922,7 +922,7 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
 </div>
 
     `}function A(){return`
-      <!-- Модалка -->
+      <!-- Modal window -->
 <div
   id="mineDisclosure"
   class="fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-50 hidden"
@@ -930,7 +930,7 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
   aria-modal="true"
   tabindex="-1"
 >
-  <!-- Модалка діалог -->
+  <!-- Modal dialog -->
   <div class="bg-white rounded-lg shadow-lg max-w-lg w-full mx-4 md:mx-0 modal-body">
     <!-- Заголовок модалки -->
     <div class="flex items-center justify-between px-6 py-4 border-b border-gray-300">
@@ -945,7 +945,7 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
       </button>
     </div>
 
-    <!-- Тіло модалки -->
+    <!-- Modal body -->
     <div class="p-6 overflow-y-auto max-h-96">
       <p class="text-sm text-gray-700">
         MattressVerdict.com is a mattress reviews website. Our website compares
@@ -1018,7 +1018,7 @@ If you're looking to purchase a bed-in-a-box that offers comfort and affordabili
     <div class="max-w-[1030px] w-full mx-auto">
     ${y()}
     ${E()}
-    ${M()}
+    ${F()}
     ${B()}
     ${C()}
     </div>

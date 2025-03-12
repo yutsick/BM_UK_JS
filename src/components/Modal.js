@@ -1,7 +1,7 @@
 
 export default function modal() {
     return `
-      <!-- Модалка -->
+      <!-- Modal window -->
 <div
   id="mineDisclosure"
   class="fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-50 hidden"
@@ -9,7 +9,7 @@ export default function modal() {
   aria-modal="true"
   tabindex="-1"
 >
-  <!-- Модалка діалог -->
+  <!-- Modal dialog -->
   <div class="bg-white rounded-lg shadow-lg max-w-lg w-full mx-4 md:mx-0 modal-body">
     <!-- Заголовок модалки -->
     <div class="flex items-center justify-between px-6 py-4 border-b border-gray-300">
@@ -24,7 +24,7 @@ export default function modal() {
       </button>
     </div>
 
-    <!-- Тіло модалки -->
+    <!-- Modal body -->
     <div class="p-6 overflow-y-auto max-h-96">
       <p class="text-sm text-gray-700">
         MattressVerdict.com is a mattress reviews website. Our website compares

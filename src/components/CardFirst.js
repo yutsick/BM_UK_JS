@@ -53,7 +53,7 @@ export default function cardFirst({ribbon, logo, title, scoreValue, scoreText, l
              <!-- Tooltip -->
                 <div class="absolute w-full max-w-[160px] top-0 left-1/2 -translate-x-1/2 -translate-y-full bg-gray-200 text-black text-sm  p-2 rounded shadow-lg">
                     Over <span class="font-bold">690</span> people chose this mattress today
-                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-3 h-3 bg-gray-200 rotate-45"></div>
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-3 h-3 bg-gray-200 rotate-45 mb-1"></div>
                 </div>
 
           </div>
