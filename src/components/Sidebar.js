@@ -53,7 +53,7 @@ export default function Sidebar() {
           <div class="space-y-6">
             <!-- Article 1 -->
             <div>
-              <h3 class="text-[#4A89E1] font-bold">
+              <h3 class="text-[#9AD8FF] font-bold">
                 <a href="https://mattressverdict.com/comparison/best-mattress" class="hover:underline">
                   Top Mattresses Compared: Find the Best Mattress for Your Sleep Needs
                 </a>
@@ -66,7 +66,7 @@ export default function Sidebar() {
   
             <!-- Article 2 -->
             <div>
-              <h3 class="text-[#4A89E1] font-bold">
+              <h3 class="text-[#9AD8FF] font-bold">
                 <a href="https://mattressverdict.com/comparison/best-mattress-for-back-pain" class="hover:underline">
                   Top Mattresses for Back Pain Relief: Our Best Picks for Supportive Sleep
                 </a>
@@ -79,7 +79,7 @@ export default function Sidebar() {
   
             <!-- Article 3 -->
             <div>
-              <h3 class="text-[#4A89E1] font-bold">
+              <h3 class="text-[#9AD8FF] font-bold">
                 <a href="https://mattressverdict.com/comparison/best-memory-foam-mattress" class="hover:underline">
                   Best Memory Foam Mattresses: Ultimate Comfort and Support
                 </a>
@@ -127,11 +127,11 @@ export default function Sidebar() {
             <div id="collapsibleContainer" class="flex flex-col items-center ">
              
                 <div id="collapsibleText" class="text-[#E5E5E5] hidden transition-opacity duration-600">
-                    <div class="mb-4 text-[11px]">
+                    <div class="mb-4 text-[12px]">
                         At our mattress comparison website, we strive to provide reliable and trustworthy information. Our rating system takes into account various factors to ensure accurate evaluations and personalized recommendations for each visitor. Here's what we consider when ranking mattress models and brands:
                     </div>
 
-                    <ul class="list-disc list-inside space-y-1 text-[11px]">
+                    <ul class="list-disc list-inside space-y-1 text-[12px]">
                         <li>Price</li>
                         <li>Materials</li>
                         <li>Mattress Construction</li>

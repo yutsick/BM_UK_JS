@@ -16,12 +16,16 @@
   }
   .top-img{
     clip-path: polygon(0 0,100% 0,100% 100%,15% 100%);
+    background: linear-gradient(80.66deg, rgba(78, 75, 70, 0.88) 16.89%, rgba(78, 75, 70, 0.53) 37.82%, rgba(79, 78, 78, 0.4) 50.44%, rgba(77, 77, 77, 0.1) 76.24%, rgba(84, 84, 84, 0.05) 87.97%);
+
     @media (max-width: 768px) {
       clip-path: none;
+      background:transparent;
     }
   }
   .header-overlay{
     background: linear-gradient(90deg, #32302E 0%, #3F3E3D 27%, rgba(91, 89, 88, 0.8) 61.5%, rgba(143, 139, 137, 0) 100%);
+
 
 
     @media(max-width: 768px){
