@@ -21,11 +21,9 @@
     }
   }
   .header-overlay{
-    background: linear-gradient(90deg, 
-                  rgba(50, 48, 46, 1) 0%, 
-                  rgba(63, 62, 61, 1) 27%, 
-                  rgba(91, 89, 88, 0.8) 61.5%, 
-                  rgba(143, 139, 137, 0) 100%);
+    background: linear-gradient(90deg, #32302E 0%, #3F3E3D 27%, rgba(91, 89, 88, 0.8) 61.5%, rgba(143, 139, 137, 0) 100%);
+
+
     @media(max-width: 768px){
       background: rgba(0,0,0,0.5);
      
@@ -40,6 +38,7 @@
     box-shadow: 0px 4px 5px 0px #00000033;
     border-radius: 2px;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-weight: 300;
     padding: 9px 15px 9px 20px;

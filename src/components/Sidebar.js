@@ -6,7 +6,7 @@ export default function Sidebar() {
       <div class="faq-item">
         <!-- Question -->
         <button class="faq-toggle">
-          <span class="arrow-faq relative hover:underline flex text-start pl-5">${question}</span>
+          <span class="arrow-faq relative hover:underline flex text-start text-[15px] pl-5">${question}</span>
         </button>
 
         <!-- Answer -->
@@ -24,14 +24,14 @@ export default function Sidebar() {
       <aside class="bg-[#545453] text-white p-6 space-y-8 h-full">
         <div class="flex items-center justify-center p-4  shadow-[0px_0px_5px_2px_#7E7E7E4D] border-[1.5px] border-[#AFAFAF] ">
           <div class="text-center">
-            <h2 class="text-white text-[24px] font-semibold">
+            <h2 class="text-white text-[28px] font-semibold">
                 19,652,018
             </h2>
-            <div class="text-[#E5E5E5] mt-1.5 text-[11px] leading-[18px] font-medium">
-                people have compared and<br> chosen their mattress with
+            <div class="text-[#E5E5E5] mt-1.5 text-[13px] leading-[21px] font-medium">
+                people have compared and chosen their mattress with
             </div>
-            <div class="flex items-center justify-center gap-1.5 mt-3 text-[11px] leading-[18px] font-semibold">
-                <img src="./assets/images/mv-logo.png" alt="verdict-logo" class="w-6 h-6"> 
+            <div class="flex items-center justify-center gap-1.5 mt-3 text-[13px] leading-[21px] font-semibold">
+                <img src="./assets/images/mv-logo.png" alt="verdict-logo" class="w-7 h-7"> 
                 <span class="text-[#e5e5e5] font-semibold">MATTRESS VERDICT</span>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function Sidebar() {
 
         <!-- Common Questions -->
         <div>
-          <h2 class="text-xl font-semibold text-center mb-4 border-b border-[#D7D7D6] pb-2">Common Questions</h2>
+          <h2 class="text-[17px] font-semibold text-center mb-4 border-b border-[#D7D7D6] pb-2">Common Questions</h2>
 
           <div class="flex flex-col gap-[10px]">
             ${commonQuestionsHtml}
@@ -49,11 +49,11 @@ export default function Sidebar() {
   
         <!-- Most Popular Articles -->
         <div>
-          <h2 class="text-xl font-semibold text-center mb-4 border-b border-[#D7D7D6] pb-2">Most Popular Articles</h2>
+          <h2 class="text-[17px] font-semibold text-center mb-4 border-b border-[#D7D7D6] pb-2">Most Popular Articles</h2>
           <div class="space-y-6">
             <!-- Article 1 -->
             <div>
-              <h3 class="text-color-blue font-bold">
+              <h3 class="text-[#4A89E1] font-bold">
                 <a href="https://mattressverdict.com/comparison/best-mattress" class="hover:underline">
                   Top Mattresses Compared: Find the Best Mattress for Your Sleep Needs
                 </a>
@@ -66,7 +66,7 @@ export default function Sidebar() {
   
             <!-- Article 2 -->
             <div>
-              <h3 class="text-color-blue font-bold">
+              <h3 class="text-[#4A89E1] font-bold">
                 <a href="https://mattressverdict.com/comparison/best-mattress-for-back-pain" class="hover:underline">
                   Top Mattresses for Back Pain Relief: Our Best Picks for Supportive Sleep
                 </a>
@@ -79,7 +79,7 @@ export default function Sidebar() {
   
             <!-- Article 3 -->
             <div>
-              <h3 class="text-color-blue font-bold">
+              <h3 class="text-[#4A89E1] font-bold">
                 <a href="https://mattressverdict.com/comparison/best-memory-foam-mattress" class="hover:underline">
                   Best Memory Foam Mattresses: Ultimate Comfort and Support
                 </a>
@@ -114,12 +114,12 @@ export default function Sidebar() {
             </div>
 
       
-            <h2 class="text-white text-[17px] font-semibold text-center">
+            <h2 class="text-white text-[18px] font-semibold text-center">
                 Our Ranking Method
             </h2>
 
        
-            <div class="text-[#E5E5E5] text-[11px] font-medium leading-[18px] mt-2 text-center">
+            <div class="text-[#E5E5E5] text-[12px] font-medium leading-[20px] mt-2 text-center">
                 Learn more about how we rate the mattresses
             </div>
 
@@ -156,32 +156,32 @@ export default function Sidebar() {
           <div class=" mt-5 flex flex-col items-center justify-center p-4 shadow-[0px_0px_5px_2px_#7E7E7E4D] border-[1.5px] border-[#AFAFAF] ">
          
            
-            <h2 class="text-white text-[17px] font-semibold text-center">
+            <h2 class="text-white text-[18px] font-semibold text-center">
                 Why Compare With Us?
             </h2>
 
        
-            <div class="flex items-start gap-4 mb-2 mt-2 text-[11px] leading-[19px]">
+            <div class="flex items-start gap-4 mb-2 mt-2 text-[12px] leading-[20px]">
               
                 <div class="w-6 h-6 mt-1">
                   <img src="./assets/images/icon-info.svg" alt="secure badge" class="w-6 h-6">
                 </div>
            
                 <div class="flex-1 font-medium">
-                    <h3 class="text-white text-[12px]">Knowledge at Your Fingertips</h3>
+                    <h3 class="text-white text-[13px]">Knowledge at Your Fingertips</h3>
                     <p class="text-[#E5E5E5] mt-1">
                         Our team has invested over 500+ hours in extensive research to provide comprehensive information on top mattresses.
                     </p>
                 </div>
             </div>
 
-            <div class="flex items-start gap-4 mb-2  mt-2 text-[11px] leading-[17px]">
+            <div class="flex items-start gap-4 mb-2  mt-2 text-[12px] leading-20px]">
                 <div class="w-6 h-6">
                   <img src="./assets/images/icon-like.svg" alt="secure badge" class="w-6 h-6">
                 </div>
                
                 <div class="flex-1 font-medium">
-                    <h3 class="text-white text-[12px]">Confident Decision-Making</h3>
+                    <h3 class="text-white text-[13px]">Confident Decision-Making</h3>
                     <p class="text-[#E5E5E5] mt-1">
                         Browse our curated list to find the perfect mattress that meets your preferences and needs. Our in-depth reviews will help you make an informed choice.
                     </p>
@@ -189,13 +189,13 @@ export default function Sidebar() {
             </div>
 
         
-                <div class="flex items-start gap-4  mt-2 text-[11px] leading-[17px]">
+                <div class="flex items-start gap-4  mt-2 text-[12px] leading-[20px]">
                  <div class="w-6 h-6">
                   <img src="./assets/images/icon-guard.svg" alt="secure badge" class="w-6 h-6">
                 </div>
               
                 <div class="flex-1 font-medium">
-                    <h3 class="text-white text-l[12px]">Security and Trust</h3>
+                    <h3 class="text-white text-l[13px]">Security and Trust</h3>
                     <p class="text-[#E5E5E5] mt-1">
                         We exclusively compare mattresses from reputable, top brands that prioritize high-security standards for a secure shopping experience.
                     </p>

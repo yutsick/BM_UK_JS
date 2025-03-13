@@ -24,14 +24,14 @@ export default function card({ribbon='', logo, title, scoreValue, scoreText, lis
   
   return `
     <div class="border-b-[3px] md:border-b border-[#95A5A6] md:border-gray-300 bg-white relative hover:bg-[#EAEEFB] hover:cursor-pointer">
-    
+   
     ${ribbon.length !==0 ? `  
       <div class="ribbon">${ribbon}</div> 
     ` : ''}
       <!-- Content -->
-      <div class="flex flex-1 md:pt-3">
+      <div class="flex flex-1 md:py-3">
         <!-- Logo -->
-        <div class="${ribbon.length !==0 ? 'pt-[80px]'  : 'pt-[60px]'} md:pl-4 px-2 max-w-[150px] md:max-w-[160px]  h-auto md:justify-center flex flex-col bg-[#f3f3f3] md:bg-transparent">
+        <div class="${ribbon.length !==0 ? 'pt-[80px] '  : 'pt-[60px]'} ${hasBanner ? 'md:pt-[23px]'  : 'md:pt-0'}  md:pl-4 px-2 max-w-[150px] md:max-w-[160px]  h-auto md:justify-center flex flex-col bg-[#f3f3f3] md:bg-transparent">
           <img src="./assets/images/${logo}" alt="Logo" class="w-full">
           <!-- Score -->
           <div class="text-center relative w-full flex flex-col flex-1 justify-center transform -translate-y-1/4 md:hidden">
@@ -59,11 +59,11 @@ export default function card({ribbon='', logo, title, scoreValue, scoreText, lis
           
           
               
-              
+              <a href="#" class=" hover:text-black text-color-grey font-medium list-item md:text-[14px] md:leading-[17px] underline  block">Full review page</a>
             </ul>
-            <a href="#" class=" hover:text-black text-color-grey font-medium list-item md:text-[14px] md:leading-[17px] underline  hidden md:block">Full review page</a>
+            
             ${offer && `
-              <div class="flex  my-3 gap-2">
+              <div class="flex mt-4 mb-3 gap-2">
                 <img src="./assets/images/offer-icon.svg" alt="offer" class="h-5 w-5">
                 <div class="text-color-red text-[15px] leading-[18px] font-semibold ">${offer}</div>
                 
@@ -104,7 +104,7 @@ export default function card({ribbon='', logo, title, scoreValue, scoreText, lis
   
         ${hasBanner ? `
           <!-- Banner -->
-          <a href="#" class="shadow-banner mb-3 md:mb-6 text-center font-semibold flex justify-end  absolute z-1 bottom-2 md:relative md:max-w-[525px]   md:h-9  left-8 right-8">
+          <a href="#" class="shadow-banner mb-3 md:mb-6 text-center font-semibold flex justify-end bg-white absolute z-1 bottom-2 md:relative md:max-w-[525px]   md:h-9  left-8 right-8">
             <div class=" flex-grow  px-1 justify-center flex  py-1 border-dashed border border-background-grey text-color-grey border-r-0 flex-col items-center md:flex-row text-[15px]">
             <span class="hidden md:inline">Get FREE delivery and returns | 365-day trial</span>
             <span class="md:hidden">Get FREE delivery and returns + 365-day trial</span>
